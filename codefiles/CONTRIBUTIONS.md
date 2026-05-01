@@ -15,8 +15,7 @@ Contributions implemented and benchmarked:
 1. An **Anisotropic Gaussian Predictive Social Costmap** (Python ROS2 node)
 2. A **D\* Lite Nav2 global planner plugin** (C++)
 3. A **Smac Hybrid A\* + MPPI** experiment configuration
-4. A **standalone A\* vs D\* Lite map-level benchmark** (no Gazebo)
-5. An **automated experiment framework** with per-run metrics collection
+4. An **automated experiment framework** with per-run metrics collection
 
 ---
 
@@ -142,19 +141,7 @@ Param file: `param/nav2_social_smac.yaml`
 
 ---
 
-## Contribution 4 — Standalone A\* vs D\* Lite Benchmark (`dstar_lite_planner.py`)
-
-A pure-Python, Gazebo-free comparison that runs both algorithms on `maps/cafe.yaml`.
-
-- Pedestrian positions are projected onto the occupancy grid as circular static obstacles
-- A\* plans on the final obstacle map; D\* Lite plans on the clean map then receives the obstacles as dynamic updates and replans
-- Reports: path length (m), planning time (s), pedestrian proximity violations
-
-This provides a controlled comparison of algorithmic behavior independent of Nav2 and simulation variability.
-
----
-
-## Contribution 5 — Experiment Framework
+## Contribution 4 — Experiment Framework
 
 ### `data_collector.py`
 
@@ -186,7 +173,6 @@ Supports environment variable overrides: `MODES`, `RUNS_PER_MODE`, `CSV_FILE`, `
 
 | Script | Purpose |
 | --- | --- |
-| `run_ad_experiments.sh` | Batch runner for the standalone A\*/D\* Lite benchmark |
 | `run_sequential_reboot.sh` | Runs multiple modes with automatic machine reboots between them to prevent Gazebo state corruption on overnight sessions |
 | `setup_and_start.sh` | Configures `@reboot` cron to auto-resume experiments after reboot (requires sudo) |
 | `convert_csv_time.py` | Off-line utility: converts sim `time_s` to wall-clock time given a measured RTF |
@@ -221,10 +207,8 @@ Supports environment variable overrides: `MODES`, `RUNS_PER_MODE`, `CSV_FILE`, `
 | `param/social_pose_bridge.yaml` | **New** | ROS-GZ bridge config for social costmap topic |
 | `param/turtlebot3_burger_bridge_local.yaml` | **New** | Local ROS-GZ bridge config |
 | `param/custom_bt.xml` | **New** | Custom Nav2 behavior tree XML |
-| `codefiles/social_nav_node.py` | **New** | (same as above — kept here for standalone reference) |
-| `codefiles/dstar_lite_planner.py` | **New** | Standalone A\* vs D\* Lite benchmark |
+| `codefiles/social_nav_node.py` | **New** | Social costmap node copy kept for submission reference |
 | `codefiles/run_all_experiments.sh` | **New** | Batch Nav2 experiment automation |
-| `codefiles/run_ad_experiments.sh` | **New** | Standalone A\*/D\* batch runner |
 | `codefiles/run_sequential_reboot.sh` | **New** | Multi-mode runner with auto-reboot |
 | `codefiles/setup_and_start.sh` | **New** | Auto-resume cron setup |
 | `codefiles/convert_csv_time.py` | **New** | Sim-time → wall-clock converter |

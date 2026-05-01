@@ -44,7 +44,6 @@ This project includes the following pieces:
 - a social costmap node that reacts to pedestrians and their predicted motion;
 - a Nav2 D* Lite global planner plugin for incremental replanning;
 - dynamic navigation configurations using MPPI and conservative costmap settings;
-- a standalone A* versus D* Lite benchmark for comparison;
 - experiment scripts and CSV logging for result collection.
 
 ## Required performance metrics
@@ -122,12 +121,6 @@ ros2 launch cpe631_ros2 cafe_dynamic.launch.py navigation:=true map_file:=<path 
 
 In RViz, use **2D Pose Estimate** to set the start pose, then **Nav2 Goal** to send a target.
 
-### Standalone planner comparison
-
-```bash
-python3 codefiles/dstar_lite_planner.py --map maps/cafe.yaml --algorithm both
-RUNS_PER_ALGO=25 CSV_FILE=a_dstar_results_25.csv ./codefiles/run_ad_experiments.sh
-```
 
 ## Launch files and parameters
 

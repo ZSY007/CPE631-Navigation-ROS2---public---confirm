@@ -47,8 +47,6 @@ As a rule, keep reusable improvements in `codefiles/` and avoid editing the orig
 | `run_sequential_reboot.sh` | Runs long experiments across reboot-separated modes. | Yes |
 | `setup_and_start.sh` | Configures automatic reboot continuation for long experiments. | Yes, requires sudo |
 | `convert_csv_time.py` | Converts simulation time to wall-clock estimates using measured RTF. | No |
-| `dstar_lite_planner.py` | Standalone A* and D* Lite map-level comparison. | No |
-| `run_ad_experiments.sh` | Runs A* and D* Lite experiments and writes CSV output. | No |
 | `point.py` | Checks route points and yaw values on the cafe map. | No |
 
 ## Using the Improved ROS 2 Nodes
@@ -170,32 +168,6 @@ Current row counts:
 | `social_smac` | 39 | 19 |
 
 Use `time_s` for algorithm comparison because it is simulation time. Use the wall-clock columns only when discussing how long the experiments took to run on the machine.
-
-## A* and D* Lite Standalone Comparison
-
-This comparison does not launch Gazebo or Nav2. It runs directly on `maps/cafe.yaml`, with pedestrian positions projected as dynamic obstacles.
-
-Default pedestrian positions:
-
-```text
-(3.0, 5.0), (-3.0, 5.0), (2.0, -4.5), (0.0, 6.0), (-1.0, 2.0)
-```
-
-Single run:
-
-```bash
-cd /home/dx/CPE631-Navigation-ROS2-main
-python3 codefiles/dstar_lite_planner.py --map maps/cafe.yaml --algorithm both
-```
-
-Run 25 trials for A* and D* Lite:
-
-```bash
-cd /home/dx/CPE631-Navigation-ROS2-main
-RUNS_PER_ALGO=25 \
-CSV_FILE=/home/dx/CPE631-Navigation-ROS2-main/a_dstar_results_25.csv \
-./codefiles/run_ad_experiments.sh
-```
 
 ## Long Experiments and Reboot Workflow
 

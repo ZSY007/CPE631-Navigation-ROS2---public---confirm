@@ -118,17 +118,7 @@ CSV_FILE=~/ros2_ws/experiment_results.csv \
 ./codefiles/run_all_experiments.sh
 ```
 
-### Option B — Standalone A\* vs D\* Lite (no Gazebo needed)
-
-```bash
-# Single test
-python3 codefiles/dstar_lite_planner.py --map maps/cafe.yaml --algorithm both
-
-# Batch (25 runs, writes CSV)
-RUNS_PER_ALGO=25 CSV_FILE=a_dstar_results_25.csv ./codefiles/run_ad_experiments.sh
-```
-
-### Option C — Manual single run (demo / step-by-step)
+### Option B — Manual single run (demo / step-by-step)
 
 ```bash
 # Terminal 1 — Gazebo + Nav2 + pedestrians
@@ -176,6 +166,5 @@ ros2 run cpe631_ros2 goal_sender --ros-args \
 |---|---|
 | `5.csv` | Main Nav2 simulation results — baseline, dynamic, dynamic_astar, dynamic_dstar, social, social_astar, dstar_social — 25 runs each |
 | `social_smac_tuned_25.csv` | social_smac results — 25 runs, tuned parameters, EXPERIMENT_TIMEOUT=500 |
-| `a_dstar_results_25.csv` | Standalone A\* vs D\* Lite results — 25 runs each |
 
 > All `time_s` values are **ROS/Gazebo simulation seconds**, not wall-clock time.
