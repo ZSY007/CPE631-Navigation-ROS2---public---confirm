@@ -1,0 +1,6 @@
+[0;32m[02:54:42] ✔ 包目录: /home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main[0m
+[0;36m[02:54:42][0m 同步 launch/param/worlds/models/codefiles 到 workspace 包 ...
+cp: 无法以非目录来覆盖目录 '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/codefiles/./log/latest'
+cp: 无法以非目录来覆盖目录 '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/codefiles/./log/latest_build'
+[0;36m[02:54:42][0m 清理所有后台进程...
+[0;36m[02:54:54][0m 清理完成

@@ -1,0 +1,6 @@
+experiment,mode,result,attempt,path_length_m,time_s,encounters,personal_violations,intimate_violations,min_ped_dist_m,mean_angular_acceleration
+1,dynamic,aborted,0,20.838,75.15,9,8,3,0.247,0.7707
+1,dynamic,aborted,1,6.018,14.17,3,6,0,0.927,0.5969
+2,dynamic,succeeded,0,35.268,88.53,8,8,0,0.562,0.4425
+3,dynamic,succeeded,0,37.759,114.06,9,11,3,0.056,0.5407
+4,dynamic,interrupted,0,5.222,522.87,3,3,0,0.551,0.1911

@@ -1,0 +1,10 @@
+experiment,mode,result,path_length_m,time_s,encounters,personal_violations,intimate_violations,min_ped_dist_m,mean_angular_acceleration
+1,baseline,succeeded,49.882,215.72,0,0,0,,3.183
+1,baseline,succeeded,28.599,129.14,0,0,0,,3.9976
+1,baseline,succeeded,29.05,142.9,0,0,0,,3.1781
+1,baseline,succeeded,28.647,151.41,0,0,0,,4.0638
+1,dynamic,succeeded,29.016,146.97,0,0,0,,4.1317
+1,dynamic,interrupted,17.035,138.67,0,0,0,,8.9842
+1,baseline,aborted,5.775,23.7,0,0,0,,5.2463
+1,baseline,interrupted,9.145,52.62,0,0,0,,6.2408
+1,dynamic,interrupted,10.724,50.13,0,0,0,,10.9437

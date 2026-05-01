@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: cpe631-ros2
+Version: 0.1.0
+Summary: ROS2 port of the CPE631 cafe simulation using Gazebo Sim (gz).
+Maintainer: todo
+Maintainer-email: todo@example.com
+License: TODO

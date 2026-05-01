@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^python3 - <<'PY'\nfrom PIL import Image, ImageDraw\nimport yaml, math\nfrom pathlib import Path\nroot = Path\\('/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/maps'\\)\nmeta = yaml\\.safe_load\\(open\\(root/'cafe\\.yaml'\\)\\)\nimg = Image\\.open\\(root/'cafe\\.pgm'\\)\\.convert\\('RGB'\\)\ndraw = ImageDraw\\.Draw\\(img\\)\nres = meta\\['resolution'\\]; ox, oy, _ = meta\\['origin'\\]\npts = \\[\\(0\\.55,-6\\.34,'1'\\), \\(3\\.2,-1\\.2,'2'\\), \\(-3\\.8,5\\.2,'3'\\), \\(2\\.8,6\\.2,'4'\\), \\(-4\\.6,2\\.3,'5'\\)\\]\nfor x,y,label in pts:\n    px = \\(x-ox\\)/res\n    py = img\\.height - 1 - \\(\\(y-oy\\)/res\\)\n    r = 5\n    draw\\.ellipse\\(\\(px-r, py-r, px\\+r, py\\+r\\), outline='red', width=2\\)\n    draw\\.text\\(\\(px\\+6, py-6\\), label, fill='blue'\\)\nimg = img\\.resize\\(\\(img\\.width\\*3, img\\.height\\*3\\)\\)\nout = Path\\('/tmp/cafe_route_overlay\\.png'\\)\nimg\\.save\\(out\\)\nprint\\(out\\)\nPY$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

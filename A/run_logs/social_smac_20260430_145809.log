@@ -1,0 +1,68 @@
+[0;32m[14:58:09] ✔ 包目录: /home/dx/CPE631-Navigation-ROS2-main[0m
+[0;36m[14:58:09][0m 同步 launch/param/worlds/models 到 workspace 包 ...
+[0;32m[14:58:09] ✔ 资源文件已同步[0m
+[0;36m[14:58:09][0m 复制 codefiles/ → cpe631_ros2/ ...
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/ped_pose_extractor.py' -> '/home/dx/CPE631-Navigation-ROS2-main/cpe631_ros2/ped_pose_extractor.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/social_nav_node.py' -> '/home/dx/CPE631-Navigation-ROS2-main/cpe631_ros2/social_nav_node.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/data_collector.py' -> '/home/dx/CPE631-Navigation-ROS2-main/cpe631_ros2/data_collector.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/goal_sender.py' -> '/home/dx/CPE631-Navigation-ROS2-main/cpe631_ros2/goal_sender.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/peds.py' -> '/home/dx/CPE631-Navigation-ROS2-main/cpe631_ros2/peds.py'
+[0;32m[14:58:09] ✔ 改进版代码已复制[0m
+[0;36m[14:58:09][0m 在 /home/dx/CPE631-Navigation-ROS2-main 执行 colcon build ...
+Starting >>> cpe631_ros2
+Finished <<< cpe631_ros2 [0.69s]
+
+Summary: 1 package finished [0.83s]
+[0;32m[14:58:10] ✔ 编译完成[0m
+[0;32m[14:58:11] ✔ 已 source workspace[0m
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║     ROS2 Social Navigation 三组对比实验 自动脚本 v3  ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  工作区: [0m/home/dx/CPE631-Navigation-ROS2-main
+[1m║  路线:   [0m0.5,-6.5,2.08;-3.5,0.0,0.89;2.5,6.0,-2.75;-2.0,2.1,-1.10;2.0,-4.0,-2.16
+[1m║  每组重复: [0m25 次[1m  MAX_RETRY: [0m1
+[1m║  总计: [0m25 次实验
+[1m╚═══════════════════════════════════════════════════════╝[0m
+
+
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1m  开始模式: [0;36msocial_smac[0m
+[1m  navigation=true  social_navigation=true  enable_peds=true  planner=smac[0m
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[14:58:11][0m 启动 cafe_dynamic.launch.py (mode=social_smac, planner=smac) ...
+[0;36m[14:58:11][0m   launch PID = 1934
+[0;36m[14:58:11][0m 等待 45s 让仿真完全启动...
+[0;32m[14:58:56] ✔ 仿真已启动[0m
+[0;36m[14:59:01][0m 验证 Nav2 节点就绪状态...
+[0;36m[14:59:32][0m   仍在等待 bt_navigator 激活 (15s, 当前状态: inactive)...
+[0;36m[15:00:03][0m   仍在等待 bt_navigator 激活 (30s, 当前状态: inactive)...
+[0;36m[15:00:28][0m   仍在等待 bt_navigator 激活 (45s, 当前状态: inactive)...
+[0;36m[15:00:57][0m   仍在等待 bt_navigator 激活 (60s, 当前状态: inactive)...
+[0;36m[15:01:31][0m   仍在等待 bt_navigator 激活 (75s, 当前状态: inactive)...
+[0;36m[15:02:00][0m   仍在等待 bt_navigator 激活 (90s, 当前状态: inactive)...
+[0;36m[15:02:23][0m   仍在等待 bt_navigator 激活 (105s, 当前状态: inactive)...
+[0;36m[15:02:51][0m   仍在等待 bt_navigator 激活 (120s, 当前状态: inactive)...
+[0;36m[15:03:19][0m   仍在等待 bt_navigator 激活 (135s, 当前状态: inactive)...
+[0;36m[15:03:49][0m   仍在等待 bt_navigator 激活 (150s, 当前状态: inactive)...
+[0;36m[15:04:15][0m   仍在等待 bt_navigator 激活 (165s, 当前状态: inactive)...
+[0;36m[15:04:45][0m   仍在等待 bt_navigator 激活 (180s, 当前状态: inactive)...
+[0;31m[15:04:45] ✘ bt_navigator 未在 180s 内就绪[0m
+[0;31m[15:04:45] ✘ 模式 social_smac 仿真启动失败，跳过整个模式[0m
+[0;36m[15:04:45][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[15:04:58][0m 清理完成
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║                   全部实验完成!                      ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  [0;32m成功: 0[0m[1m    [1;33m跳过: 0[0m[1m    总计: 25[0m
+[1m║  耗时: [0m7分2秒
+[1m║  CSV 结果: [0m/home/dx/ros2_ws/A/smac_clean.csv
+[1m║  日志目录: [0m/tmp/launch_*.log, /tmp/collector_*.log, /tmp/sender_*.log
+[1m╚═══════════════════════════════════════════════════════╝[0m
+[0;36m[15:05:13][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[15:05:26][0m 清理完成

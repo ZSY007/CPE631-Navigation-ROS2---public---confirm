@@ -1,0 +1,23 @@
+[0.577s] Invoking command in '/home/dx/ros2_ws/A/build/cpe631_ros2': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dx/ros2_ws/A/build/cpe631_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dx/ros2_ws/A/install/cpe631_ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dx/ros2_ws/A/build/cpe631_ros2/build --no-deps symlink_data
+[0.798s] running develop
+[0.926s] running egg_info
+[0.938s] writing cpe631_ros2.egg-info/PKG-INFO
+[0.938s] writing dependency_links to cpe631_ros2.egg-info/dependency_links.txt
+[0.938s] writing entry points to cpe631_ros2.egg-info/entry_points.txt
+[0.938s] writing requirements to cpe631_ros2.egg-info/requires.txt
+[0.939s] writing top-level names to cpe631_ros2.egg-info/top_level.txt
+[0.965s] reading manifest file 'cpe631_ros2.egg-info/SOURCES.txt'
+[0.966s] writing manifest file 'cpe631_ros2.egg-info/SOURCES.txt'
+[0.980s] running build_ext
+[0.980s] Creating /home/dx/ros2_ws/A/install/cpe631_ros2/lib/python3.12/site-packages/cpe631-ros2.egg-link (link to .)
+[0.981s] Installing cpe631_map_republisher script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+[0.981s] Installing cpe631_peds script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+[0.981s] Installing cpe631_teleop script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+[0.981s] Installing data_collector script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+[0.981s] Installing goal_sender script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+[0.981s] Installing ped_pose_extractor script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+[0.981s] Installing social_nav_node script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+[0.981s] 
+[0.981s] Installed /home/dx/ros2_ws/A/build/cpe631_ros2
+[0.981s] running symlink_data
+[1.007s] Invoked command in '/home/dx/ros2_ws/A/build/cpe631_ros2' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/dx/ros2_ws/A/build/cpe631_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dx/ros2_ws/A/install/cpe631_ros2/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/dx/ros2_ws/A/build/cpe631_ros2/build --no-deps symlink_data

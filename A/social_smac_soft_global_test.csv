@@ -1,0 +1,11 @@
+experiment,mode,result,attempt,path_length_m,time_s,encounters,personal_violations,intimate_violations,min_ped_dist_m,mean_angular_acceleration
+1,social_smac,aborted,0,10.4,29.31,3,4,1,0.288,0.5656
+1,social_smac,aborted,1,10.344,29.74,4,5,1,0.344,0.6361
+2,social_smac,aborted,0,0.0,1.45,1,1,1,0.364,0.7937
+2,social_smac,aborted,1,10.676,30.13,4,5,1,0.169,0.5787
+3,social_smac,aborted,0,0.01,1.46,1,1,1,0.174,0.7215
+3,social_smac,aborted,1,10.406,29.2,4,5,1,0.39,0.5651
+4,social_smac,aborted,0,0.0,0.65,1,1,1,0.392,2.0174
+4,social_smac,aborted,1,10.352,28.95,3,4,1,0.316,0.6059
+5,social_smac,aborted,0,0.0,1.09,1,1,1,0.312,1.4953
+5,social_smac,aborted,1,10.423,29.55,5,4,1,0.253,0.5082

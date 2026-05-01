@@ -1,0 +1,1124 @@
+state_file=/home/dx/ros2_ws/A/.exp_next_mode
+state=0
+done_file=/home/dx/ros2_ws/A/.exp_reboot_done
+master_log=/home/dx/ros2_ws/A/run_logs/master.log
+[2026-04-28 02:34:16] ============================================================
+[2026-04-28 02:34:16] Starting mode index=0, mode=dynamic, runs=25
+[2026-04-28 02:34:16] CSV: /home/dx/ros2_ws/A/dyn_clean.csv
+[2026-04-28 02:34:16] Mode log: /home/dx/ros2_ws/A/run_logs/dynamic_20260428_023416.log
+[2026-04-28 02:34:16] Experiment script: /home/dx/CPE631-Navigation-ROS2-main/codefiles/run_all_experiments.sh
+[2026-04-28 02:34:16] ============================================================
+[0;32m[02:34:16] ✔ 包目录: /home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main[0m
+[0;36m[02:34:16][0m 复制 codefiles/ → cpe631_ros2/ ...
+'/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/codefiles/ped_pose_extractor.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/ped_pose_extractor.py'
+'/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/codefiles/social_nav_node.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/social_nav_node.py'
+'/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/codefiles/data_collector.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/data_collector.py'
+'/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/codefiles/peds.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/peds.py'
+[0;32m[02:34:16] ✔ 改进版代码已复制[0m
+[0;36m[02:34:16][0m 在 /home/dx/ros2_ws/A 执行 colcon build ...
+Starting >>> cpe631_ros2
+Finished <<< cpe631_ros2 [1.01s]
+
+Summary: 1 package finished [1.16s]
+[0;32m[02:34:18] ✔ 编译完成[0m
+[0;32m[02:34:18] ✔ 已 source workspace[0m
+[1;33m[02:34:18] ⚠ 已有 CSV 已备份到 /home/dx/ros2_ws/A/dyn_clean.csv.bak_20260428_023418，本次将新建 /home/dx/ros2_ws/A/dyn_clean.csv[0m
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║     ROS2 Social Navigation 三组对比实验 自动脚本 v3  ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  工作区: [0m/home/dx/ros2_ws/A
+[1m║  路线:   [0m0.5,-6.5,2.08;-3.5,0.0,0.89;2.5,6.0,-2.75;-2.0,2.1,-1.10;2.0,-4.0,-2.16
+[1m║  每组重复: [0m25 次[1m  MAX_RETRY: [0m1
+[1m║  总计: [0m25 次实验
+[1m╚═══════════════════════════════════════════════════════╝[0m
+
+
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1m  开始模式: [0;36mdynamic[0m
+[1m  navigation=true  social_navigation=false  enable_peds=true  planner=navfn[0m
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[02:34:18][0m 启动 cafe_dynamic.launch.py (mode=dynamic, planner=navfn) ...
+[0;36m[02:34:18][0m   launch PID = 2747
+[0;36m[02:34:18][0m 等待 45s 让仿真完全启动...
+[0;32m[02:35:04] ✔ 仿真已启动[0m
+[0;36m[02:35:09][0m 验证 Nav2 节点就绪状态...
+[0;36m[02:35:33][0m   仍在等待 bt_navigator 激活 (15s, 当前状态: inactive)...
+[0;36m[02:36:01][0m   仍在等待 bt_navigator 激活 (30s, 当前状态: inactive)...
+[0;36m[02:36:27][0m   仍在等待 bt_navigator 激活 (45s, 当前状态: inactive)...
+[0;36m[02:36:57][0m   仍在等待 bt_navigator 激活 (60s, 当前状态: inactive)...
+[0;36m[02:37:27][0m   仍在等待 bt_navigator 激活 (75s, 当前状态: inactive)...
+[0;36m[02:37:57][0m   仍在等待 bt_navigator 激活 (90s, 当前状态: inactive)...
+[0;36m[02:38:27][0m   仍在等待 bt_navigator 激活 (105s, 当前状态: inactive)...
+[0;36m[02:39:00][0m   仍在等待 bt_navigator 激活 (120s, 当前状态: inactive)...
+[0;36m[02:39:31][0m   仍在等待 bt_navigator 激活 (135s, 当前状态: inactive)...
+[0;36m[02:40:00][0m   仍在等待 bt_navigator 激活 (150s, 当前状态: inactive)...
+[0;36m[02:40:30][0m   仍在等待 bt_navigator 激活 (165s, 当前状态: inactive)...
+[0;36m[02:41:03][0m   仍在等待 bt_navigator 激活 (180s, 当前状态: inactive)...
+[0;31m[02:41:03] ✘ bt_navigator 未在 180s 内就绪[0m
+[0;31m[02:41:03] ✘ 模式 dynamic 仿真启动失败，跳过整个模式[0m
+[0;36m[02:41:03][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[02:41:15][0m 清理完成
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║                   全部实验完成!                      ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  [0;32m成功: 0[0m[1m    [1;33m跳过: 0[0m[1m    总计: 25[0m
+[1m║  耗时: [0m7分12秒
+[1m║  CSV 结果: [0m/home/dx/ros2_ws/A/dyn_clean.csv
+[1m║  日志目录: [0m/tmp/launch_*.log, /tmp/collector_*.log, /tmp/sender_*.log
+[1m╚═══════════════════════════════════════════════════════╝[0m
+[0;36m[02:41:30][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[02:41:43][0m 清理完成
+[2026-04-28 02:41:43] Mode dynamic finished with exit_code=0.
+[2026-04-28 02:41:43] Next mode index=1. Rebooting in 20s.
+[2026-04-28 02:42:37] Started from @reboot; waiting 90s for system services.
+[2026-04-28 02:44:07] ============================================================
+[2026-04-28 02:44:07] Starting mode index=1, mode=social, runs=25
+[2026-04-28 02:44:07] CSV: /home/dx/ros2_ws/A/soc_clean.csv
+[2026-04-28 02:44:07] Mode log: /home/dx/ros2_ws/A/run_logs/social_20260428_024407.log
+[2026-04-28 02:44:07] Experiment script: /home/dx/CPE631-Navigation-ROS2-main/codefiles/run_all_experiments.sh
+[2026-04-28 02:44:07] ============================================================
+[0;32m[02:44:07] ✔ 包目录: /home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main[0m
+[0;36m[02:44:07][0m 复制 codefiles/ → cpe631_ros2/ ...
+'/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/codefiles/ped_pose_extractor.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/ped_pose_extractor.py'
+'/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/codefiles/social_nav_node.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/social_nav_node.py'
+'/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/codefiles/data_collector.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/data_collector.py'
+'/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/codefiles/peds.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/peds.py'
+[0;32m[02:44:07] ✔ 改进版代码已复制[0m
+[0;36m[02:44:07][0m 在 /home/dx/ros2_ws/A 执行 colcon build ...
+Starting >>> cpe631_ros2
+Finished <<< cpe631_ros2 [1.00s]
+
+Summary: 1 package finished [1.11s]
+[0;32m[02:44:08] ✔ 编译完成[0m
+[0;32m[02:44:09] ✔ 已 source workspace[0m
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║     ROS2 Social Navigation 三组对比实验 自动脚本 v3  ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  工作区: [0m/home/dx/ros2_ws/A
+[1m║  路线:   [0m0.5,-6.5,2.08;-3.5,0.0,0.89;2.5,6.0,-2.75;-2.0,2.1,-1.10;2.0,-4.0,-2.16
+[1m║  每组重复: [0m25 次[1m  MAX_RETRY: [0m1
+[1m║  总计: [0m25 次实验
+[1m╚═══════════════════════════════════════════════════════╝[0m
+
+
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1m  开始模式: [0;36msocial[0m
+[1m  navigation=true  social_navigation=true  enable_peds=true  planner=navfn[0m
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[02:44:09][0m 启动 cafe_dynamic.launch.py (mode=social, planner=navfn) ...
+[0;36m[02:44:09][0m   launch PID = 2707
+[0;36m[02:44:09][0m 等待 45s 让仿真完全启动...
+[0;32m[02:44:54] ✔ 仿真已启动[0m
+[0;36m[02:44:59][0m 验证 Nav2 节点就绪状态...
+[0;36m[02:45:31][0m   仍在等待 bt_navigator 激活 (15s, 当前状态: inactive)...
+[0;36m[02:46:03][0m   仍在等待 bt_navigator 激活 (30s, 当前状态: inactive)...
+[0;36m[02:46:33][0m   仍在等待 bt_navigator 激活 (45s, 当前状态: inactive)...
+[0;36m[02:47:02][0m   仍在等待 bt_navigator 激活 (60s, 当前状态: inactive)...
+[0;36m[02:47:26][0m   仍在等待 bt_navigator 激活 (75s, 当前状态: inactive)...
+[0;36m[02:47:58][0m   仍在等待 bt_navigator 激活 (90s, 当前状态: inactive)...
+[0;36m[02:48:29][0m   仍在等待 bt_navigator 激活 (105s, 当前状态: inactive)...
+[0;36m[02:48:56][0m   仍在等待 bt_navigator 激活 (120s, 当前状态: inactive)...
+[0;36m[02:49:25][0m   仍在等待 bt_navigator 激活 (135s, 当前状态: inactive)...
+[0;36m[02:49:51][0m   仍在等待 bt_navigator 激活 (150s, 当前状态: inactive)...
+[0;36m[02:50:20][0m   仍在等待 bt_navigator 激活 (165s, 当前状态: inactive)...
+[0;36m[02:50:44][0m   仍在等待 bt_navigator 激活 (180s, 当前状态: inactive)...
+[0;31m[02:50:44] ✘ bt_navigator 未在 180s 内就绪[0m
+[0;31m[02:50:44] ✘ 模式 social 仿真启动失败，跳过整个模式[0m
+[0;36m[02:50:44][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[02:50:57][0m 清理完成
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║                   全部实验完成!                      ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  [0;32m成功: 0[0m[1m    [1;33m跳过: 0[0m[1m    总计: 25[0m
+[1m║  耗时: [0m7分3秒
+[1m║  CSV 结果: [0m/home/dx/ros2_ws/A/soc_clean.csv
+[1m║  日志目录: [0m/tmp/launch_*.log, /tmp/collector_*.log, /tmp/sender_*.log
+[1m╚═══════════════════════════════════════════════════════╝[0m
+[0;36m[02:51:12][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[02:51:25][0m 清理完成
+[2026-04-28 02:51:25] Mode social finished with exit_code=0.
+[2026-04-28 02:51:25] Next mode index=2. Rebooting in 20s.
+[2026-04-28 02:53:12] Started from @reboot; waiting 90s for system services.
+[2026-04-28 02:54:42] ============================================================
+[2026-04-28 02:54:42] Starting mode index=2, mode=social_astar, runs=25
+[2026-04-28 02:54:42] CSV: /home/dx/ros2_ws/A/astar_clean.csv
+[2026-04-28 02:54:42] Mode log: /home/dx/ros2_ws/A/run_logs/social_astar_20260428_025442.log
+[2026-04-28 02:54:42] Experiment script: /home/dx/CPE631-Navigation-ROS2-main/codefiles/run_all_experiments.sh
+[2026-04-28 02:54:42] ============================================================
+[0;32m[02:54:42] ✔ 包目录: /home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main[0m
+[0;36m[02:54:42][0m 同步 launch/param/worlds/models/codefiles 到 workspace 包 ...
+cp: 无法以非目录来覆盖目录 '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/codefiles/./log/latest'
+cp: 无法以非目录来覆盖目录 '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/codefiles/./log/latest_build'
+[0;36m[02:54:42][0m 清理所有后台进程...
+[0;36m[02:54:54][0m 清理完成
+[2026-04-28 02:54:54] Mode social_astar finished with exit_code=1.
+[2026-04-28 02:54:54] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-28 03:00:18] ============================================================
+[2026-04-28 03:00:18] Starting mode index=0, mode=dynamic, runs=25
+[2026-04-28 03:00:18] CSV: /home/dx/ros2_ws/A/dyn_clean.csv
+[2026-04-28 03:00:18] Mode log: /home/dx/ros2_ws/A/run_logs/dynamic_20260428_030018.log
+[2026-04-28 03:00:18] Experiment script: /home/dx/CPE631-Navigation-ROS2-main/codefiles/run_all_experiments.sh
+[2026-04-28 03:00:18] ============================================================
+[0;32m[03:00:18] ✔ 包目录: /home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main[0m
+[0;36m[03:00:18][0m 同步 launch/param/worlds/models 到 workspace 包 ...
+[0;32m[03:00:18] ✔ 资源文件已同步[0m
+[0;36m[03:00:18][0m 复制 codefiles/ → cpe631_ros2/ ...
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/ped_pose_extractor.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/ped_pose_extractor.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/social_nav_node.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/social_nav_node.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/data_collector.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/data_collector.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/peds.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/peds.py'
+[0;32m[03:00:18] ✔ 改进版代码已复制[0m
+[0;36m[03:00:18][0m 在 /home/dx/ros2_ws/A 执行 colcon build ...
+Starting >>> cpe631_ros2
+Finished <<< cpe631_ros2 [0.88s]
+
+Summary: 1 package finished [1.02s]
+[0;32m[03:00:20] ✔ 编译完成[0m
+[0;32m[03:00:20] ✔ 已 source workspace[0m
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║     ROS2 Social Navigation 三组对比实验 自动脚本 v3  ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  工作区: [0m/home/dx/ros2_ws/A
+[1m║  路线:   [0m0.5,-6.5,2.08;-3.5,0.0,0.89;2.5,6.0,-2.75;-2.0,2.1,-1.10;2.0,-4.0,-2.16
+[1m║  每组重复: [0m25 次[1m  MAX_RETRY: [0m1
+[1m║  总计: [0m25 次实验
+[1m╚═══════════════════════════════════════════════════════╝[0m
+
+
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1m  开始模式: [0;36mdynamic[0m
+[1m  navigation=true  social_navigation=false  enable_peds=true  planner=navfn[0m
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[03:00:20][0m 启动 cafe_dynamic.launch.py (mode=dynamic, planner=navfn) ...
+[0;36m[03:00:20][0m   launch PID = 2760
+[0;36m[03:00:20][0m 等待 45s 让仿真完全启动...
+[0;32m[03:01:05] ✔ 仿真已启动[0m
+[0;36m[03:01:10][0m 验证 Nav2 节点就绪状态...
+[0;36m[03:01:40][0m   仍在等待 bt_navigator 激活 (15s, 当前状态: 未知)...
+[0;36m[03:02:12][0m   仍在等待 bt_navigator 激活 (30s, 当前状态: inactive)...
+[0;36m[03:02:41][0m   仍在等待 bt_navigator 激活 (45s, 当前状态: inactive)...
+[0;36m[03:03:11][0m   仍在等待 bt_navigator 激活 (60s, 当前状态: inactive)...
+[0;36m[03:03:42][0m   仍在等待 bt_navigator 激活 (75s, 当前状态: inactive)...
+[0;36m[03:04:11][0m   仍在等待 bt_navigator 激活 (90s, 当前状态: inactive)...
+[0;36m[03:04:42][0m   仍在等待 bt_navigator 激活 (105s, 当前状态: inactive)...
+[0;36m[03:04:53][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon is already running
+[0;36m[03:05:06][0m 清理完成
+[0;31m[03:05:06] ✘ launch 在等待 Nav2 就绪时退出[0m
+[0;31m[03:05:06] ✘ 模式 dynamic 仿真启动失败，跳过整个模式[0m
+[0;36m[03:05:06][0m 清理所有后台进程...
+The daemon is not running
+The daemon is already running
+[0;36m[03:05:18][0m 清理完成
+[0;36m[03:05:33][0m 清理所有后台进程...
+The daemon is not running
+The daemon has been started
+[0;36m[03:05:46][0m 清理完成
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║                   全部实验完成!                      ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  [0;32m成功: 0[0m[1m    [1;33m跳过: 0[0m[1m    总计: 25[0m
+[1m║  耗时: [0m5分26秒
+[1m║  CSV 结果: [0m/home/dx/ros2_ws/A/dyn_clean.csv
+[1m║  日志目录: [0m/tmp/launch_*.log, /tmp/collector_*.log, /tmp/sender_*.log
+[1m╚═══════════════════════════════════════════════════════╝[0m
+[0;36m[03:05:46][0m 清理所有后台进程...
+[2026-04-28 03:07:31] ============================================================
+[2026-04-28 03:07:31] Starting mode index=0, mode=dynamic, runs=25
+[2026-04-28 03:07:31] CSV: /home/dx/ros2_ws/A/dyn_clean.csv
+[2026-04-28 03:07:31] Mode log: /home/dx/ros2_ws/A/run_logs/dynamic_20260428_030731.log
+[2026-04-28 03:07:31] Experiment script: /home/dx/CPE631-Navigation-ROS2-main/codefiles/run_all_experiments.sh
+[2026-04-28 03:07:31] ============================================================
+[0;32m[03:07:31] ✔ 包目录: /home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main[0m
+[0;36m[03:07:31][0m 同步 launch/param/worlds/models 到 workspace 包 ...
+[0;32m[03:07:31] ✔ 资源文件已同步[0m
+[0;36m[03:07:31][0m 复制 codefiles/ → cpe631_ros2/ ...
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/ped_pose_extractor.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/ped_pose_extractor.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/social_nav_node.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/social_nav_node.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/data_collector.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/data_collector.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/peds.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/peds.py'
+[0;32m[03:07:31] ✔ 改进版代码已复制[0m
+[0;36m[03:07:31][0m 在 /home/dx/ros2_ws/A 执行 colcon build ...
+Starting >>> cpe631_ros2
+Finished <<< cpe631_ros2 [1.04s]
+
+Summary: 1 package finished [1.17s]
+[0;32m[03:07:33] ✔ 编译完成[0m
+[0;32m[03:07:33] ✔ 已 source workspace[0m
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║     ROS2 Social Navigation 三组对比实验 自动脚本 v3  ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  工作区: [0m/home/dx/ros2_ws/A
+[1m║  路线:   [0m0.5,-6.5,2.08;-3.5,0.0,0.89;2.5,6.0,-2.75;-2.0,2.1,-1.10;2.0,-4.0,-2.16
+[1m║  每组重复: [0m25 次[1m  MAX_RETRY: [0m1
+[1m║  总计: [0m25 次实验
+[1m╚═══════════════════════════════════════════════════════╝[0m
+
+
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1m  开始模式: [0;36mdynamic[0m
+[1m  navigation=true  social_navigation=false  enable_peds=true  planner=navfn[0m
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[03:07:33][0m 启动 cafe_dynamic.launch.py (mode=dynamic, planner=navfn) ...
+[0;36m[03:07:33][0m   launch PID = 2758
+[0;36m[03:07:33][0m 等待 45s 让仿真完全启动...
+[0;32m[03:08:18] ✔ 仿真已启动[0m
+[0;36m[03:08:23][0m 验证 Nav2 节点就绪状态...
+[0;36m[03:08:51][0m   仍在等待 bt_navigator 激活 (15s, 当前状态: inactive)...
+[0;36m[03:09:21][0m   仍在等待 bt_navigator 激活 (30s, 当前状态: inactive)...
+[0;36m[03:09:51][0m   仍在等待 bt_navigator 激活 (45s, 当前状态: inactive)...
+[0;36m[03:10:20][0m   仍在等待 bt_navigator 激活 (60s, 当前状态: inactive)...
+[0;36m[03:10:48][0m   仍在等待 bt_navigator 激活 (75s, 当前状态: inactive)...
+[0;36m[03:11:21][0m   仍在等待 bt_navigator 激活 (90s, 当前状态: inactive)...
+[0;36m[03:11:51][0m   仍在等待 bt_navigator 激活 (105s, 当前状态: inactive)...
+[0;36m[03:12:20][0m   仍在等待 bt_navigator 激活 (120s, 当前状态: inactive)...
+/home/dx/CPE631-Navigation-ROS2-main/codefiles/run_sequential_reboot.sh: 第 121 行：  2711 已杀死               env RUNS_PER_MODE="${RUNS_PER_MODE}" RESET_PEDS_EACH_RUN=1 GZ_GUI="${GZ_GUI:-1}" ENABLE_RVIZ="${ENABLE_RVIZ:-1}" SKIP_BUILD="${SKIP_BUILD:-0}" MODES="${mode}" CSV_FILE="${csv_file}" bash "${EXP_SCRIPT}" 2>&1
+      2712 已完成               | tee "${mode_log}"
+[2026-04-28 03:12:38] Mode dynamic finished with exit_code=137.
+[2026-04-28 03:12:38] Next mode index=1. Rebooting in 20s.
+[2026-04-28 03:13:32] Started from @reboot; waiting 90s for system services.
+[2026-04-28 03:15:02] ============================================================
+[2026-04-28 03:15:02] Starting mode index=0, mode=dynamic, runs=25
+[2026-04-28 03:15:02] CSV: /home/dx/ros2_ws/A/dyn_clean.csv
+[2026-04-28 03:15:02] Mode log: /home/dx/ros2_ws/A/run_logs/dynamic_20260428_031502.log
+[2026-04-28 03:15:02] Experiment script: /home/dx/CPE631-Navigation-ROS2-main/codefiles/run_all_experiments.sh
+[2026-04-28 03:15:02] ============================================================
+[0;32m[03:15:02] ✔ 包目录: /home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main[0m
+[0;36m[03:15:02][0m 同步 launch/param/worlds/models 到 workspace 包 ...
+[0;32m[03:15:02] ✔ 资源文件已同步[0m
+[0;36m[03:15:02][0m 复制 codefiles/ → cpe631_ros2/ ...
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/ped_pose_extractor.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/ped_pose_extractor.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/social_nav_node.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/social_nav_node.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/data_collector.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/data_collector.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/peds.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/peds.py'
+[0;32m[03:15:02] ✔ 改进版代码已复制[0m
+[0;36m[03:15:02][0m 在 /home/dx/ros2_ws/A 执行 colcon build ...
+Starting >>> cpe631_ros2
+Finished <<< cpe631_ros2 [1.01s]
+
+Summary: 1 package finished [1.20s]
+[0;32m[03:15:03] ✔ 编译完成[0m
+[0;32m[03:15:03] ✔ 已 source workspace[0m
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║     ROS2 Social Navigation 三组对比实验 自动脚本 v3  ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  工作区: [0m/home/dx/ros2_ws/A
+[1m║  路线:   [0m0.5,-6.5,2.08;-3.5,0.0,0.89;2.5,6.0,-2.75;-2.0,2.1,-1.10;2.0,-4.0,-2.16
+[1m║  每组重复: [0m25 次[1m  MAX_RETRY: [0m1
+[1m║  总计: [0m25 次实验
+[1m╚═══════════════════════════════════════════════════════╝[0m
+
+
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1m  开始模式: [0;36mdynamic[0m
+[1m  navigation=true  social_navigation=false  enable_peds=true  planner=navfn[0m
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[03:15:03][0m 启动 cafe_dynamic.launch.py (mode=dynamic, planner=navfn) ...
+[0;36m[03:15:03][0m   launch PID = 3864
+[0;36m[03:15:03][0m 等待 45s 让仿真完全启动...
+[0;32m[03:15:48] ✔ 仿真已启动[0m
+[0;36m[03:15:53][0m 验证 Nav2 节点就绪状态...
+[0;36m[03:16:18][0m   仍在等待 bt_navigator 激活 (15s, 当前状态: inactive)...
+[0;36m[03:16:51][0m   仍在等待 bt_navigator 激活 (30s, 当前状态: inactive)...
+[2026-04-28 03:17:14] Mode dynamic finished with exit_code=141.
+[2026-04-28 03:17:14] Next mode index=1. Rebooting in 20s.
+[2026-04-28 03:18:38] Started from @reboot; waiting 90s for system services.
+[2026-04-28 03:21:30] ============================================================
+[2026-04-28 03:21:30] Starting mode index=0, mode=dynamic, runs=25
+[2026-04-28 03:21:30] CSV: /home/dx/ros2_ws/A/dyn_clean.csv
+[2026-04-28 03:21:30] Mode log: /home/dx/ros2_ws/A/run_logs/dynamic_20260428_032130.log
+[2026-04-28 03:21:30] Experiment script: /home/dx/CPE631-Navigation-ROS2-main/codefiles/run_all_experiments.sh
+[2026-04-28 03:21:30] ============================================================
+[0;32m[03:21:30] ✔ 包目录: /home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main[0m
+[0;36m[03:21:30][0m 同步 launch/param/worlds/models 到 workspace 包 ...
+[0;32m[03:21:30] ✔ 资源文件已同步[0m
+[0;36m[03:21:30][0m 复制 codefiles/ → cpe631_ros2/ ...
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/ped_pose_extractor.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/ped_pose_extractor.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/social_nav_node.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/social_nav_node.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/data_collector.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/data_collector.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/peds.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/peds.py'
+[0;32m[03:21:30] ✔ 改进版代码已复制[0m
+[0;36m[03:21:30][0m 在 /home/dx/ros2_ws/A 执行 colcon build ...
+Starting >>> cpe631_ros2
+Finished <<< cpe631_ros2 [1.19s]
+
+Summary: 1 package finished [1.35s]
+[0;32m[03:21:31] ✔ 编译完成[0m
+[0;32m[03:21:32] ✔ 已 source workspace[0m
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║     ROS2 Social Navigation 三组对比实验 自动脚本 v3  ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  工作区: [0m/home/dx/ros2_ws/A
+[1m║  路线:   [0m0.5,-6.5,2.08;-3.5,0.0,0.89;2.5,6.0,-2.75;-2.0,2.1,-1.10;2.0,-4.0,-2.16
+[1m║  每组重复: [0m25 次[1m  MAX_RETRY: [0m1
+[1m║  总计: [0m25 次实验
+[1m╚═══════════════════════════════════════════════════════╝[0m
+
+
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1m  开始模式: [0;36mdynamic[0m
+[1m  navigation=true  social_navigation=false  enable_peds=true  planner=navfn[0m
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[03:21:32][0m 启动 cafe_dynamic.launch.py (mode=dynamic, planner=navfn) ...
+[0;36m[03:21:32][0m   launch PID = 3606
+[0;36m[03:21:32][0m 等待 45s 让仿真完全启动...
+[0;32m[03:22:17] ✔ 仿真已启动[0m
+[0;36m[03:22:22][0m 验证 Nav2 节点就绪状态...
+[0;32m[03:22:24] ✔ Nav2 bt_navigator 已激活[0m
+
+[0;36m[03:22:24][0m ═══ dynamic 实验 1/25 ═══
+[0;36m[03:22:24][0m 尝试 0/1 ...
+[0;36m[03:22:26][0m 重置行人到初始位置...
+[0;32m[03:22:26] ✔ 行人已重置[0m
+[0;36m[03:22:28][0m 启动 data_collector (mode=dynamic, exp=1, attempt=0) ...
+[0;36m[03:22:28][0m   data_collector PID = 5859
+[0;36m[03:22:31][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[03:22:47][0m   goal_sender 退出码 = 2
+[0;36m[03:22:47][0m   result = aborted (写入 /tmp/result_dynamic_1_0.txt)
+[0;36m[03:22:47][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[03:22:47][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[03:22:48] ✔ data_collector 已退出[0m
+[1;33m[03:22:49] ⚠ 实验 dynamic #1 被 Nav2 abort (attempt=0)[0m
+[0;36m[03:22:49][0m 重置机器人位姿并重试...
+[0;36m[03:22:49][0m 重置机器人位姿 → (1.0, 0.0, yaw=0.0)
+[0;36m[03:22:49][0m   重置 bt_navigator 生命周期...
+Transitioning successful
+data: true
+
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=1.0, y=0.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0.])))
+
+requester: making request: nav2_msgs.srv.ClearEntireCostmap_Request(request=std_msgs.msg.Empty())
+
+response:
+nav2_msgs.srv.ClearEntireCostmap_Response(response=std_msgs.msg.Empty())
+
+requester: making request: nav2_msgs.srv.ClearEntireCostmap_Request(request=std_msgs.msg.Empty())
+
+response:
+nav2_msgs.srv.ClearEntireCostmap_Response(response=std_msgs.msg.Empty())
+
+[0;32m[03:23:08] ✔ 机器人位姿已重置[0m
+[0;36m[03:23:13][0m 尝试 1/1 ...
+[0;36m[03:23:16][0m 重置行人到初始位置...
+[0;32m[03:23:17] ✔ 行人已重置[0m
+[0;36m[03:23:19][0m 启动 data_collector (mode=dynamic, exp=1, attempt=1) ...
+[0;36m[03:23:19][0m   data_collector PID = 7599
+[0;36m[03:23:21][0m 启动 goal_sender (timeout=disabled) ...
+nohup: 忽略输入
+[0;36m[03:32:38][0m   goal_sender 退出码 = 0
+[0;36m[03:32:38][0m   result = succeeded (写入 /tmp/result_dynamic_1_1.txt)
+[0;36m[03:32:38][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[03:32:39][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[03:32:40] ✔ data_collector 已退出[0m
+[0;32m[03:32:40] ✔ 实验 dynamic #1 成功 (attempt=1)[0m
+
+[0;36m[03:32:45][0m ═══ dynamic 实验 2/25 ═══
+[0;36m[03:32:45][0m 尝试 0/1 ...
+[0;36m[03:32:47][0m 重置行人到初始位置...
+[0;32m[03:32:48] ✔ 行人已重置[0m
+[0;36m[03:32:50][0m 启动 data_collector (mode=dynamic, exp=2, attempt=0) ...
+[0;36m[03:32:50][0m   data_collector PID = 21927
+[0;36m[03:32:52][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[03:37:46][0m   goal_sender 退出码 = 0
+[0;36m[03:37:46][0m   result = succeeded (写入 /tmp/result_dynamic_2_0.txt)
+[0;36m[03:37:46][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[03:37:46][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[03:37:46] ✔ 数据已落盘[0m
+[0;32m[03:37:49] ✔ 实验 dynamic #2 成功 (attempt=0)[0m
+
+[0;36m[03:37:54][0m ═══ dynamic 实验 3/25 ═══
+[0;36m[03:37:54][0m 尝试 0/1 ...
+[0;36m[03:37:56][0m 重置行人到初始位置...
+[0;32m[03:37:57] ✔ 行人已重置[0m
+[0;36m[03:37:59][0m 启动 data_collector (mode=dynamic, exp=3, attempt=0) ...
+[0;36m[03:37:59][0m   data_collector PID = 22324
+[0;36m[03:38:01][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[03:43:07][0m   goal_sender 退出码 = 0
+[0;36m[03:43:07][0m   result = succeeded (写入 /tmp/result_dynamic_3_0.txt)
+[0;36m[03:43:07][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[03:43:07][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[03:43:07] ✔ 数据已落盘[0m
+[0;32m[03:43:09] ✔ 实验 dynamic #3 成功 (attempt=0)[0m
+
+[0;36m[03:43:14][0m ═══ dynamic 实验 4/25 ═══
+[0;36m[03:43:14][0m 尝试 0/1 ...
+[0;36m[03:43:16][0m 重置行人到初始位置...
+[0;32m[03:43:17] ✔ 行人已重置[0m
+[0;36m[03:43:19][0m 启动 data_collector (mode=dynamic, exp=4, attempt=0) ...
+[0;36m[03:43:19][0m   data_collector PID = 22720
+[0;36m[03:43:21][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[03:48:13][0m   goal_sender 退出码 = 0
+[0;36m[03:48:13][0m   result = succeeded (写入 /tmp/result_dynamic_4_0.txt)
+[0;36m[03:48:13][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[03:48:13][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[03:48:13] ✔ 数据已落盘[0m
+[0;32m[03:48:16] ✔ 实验 dynamic #4 成功 (attempt=0)[0m
+
+[0;36m[03:48:21][0m ═══ dynamic 实验 5/25 ═══
+[0;36m[03:48:21][0m 尝试 0/1 ...
+[0;36m[03:48:22][0m 重置行人到初始位置...
+[0;32m[03:48:24] ✔ 行人已重置[0m
+[0;36m[03:48:26][0m 启动 data_collector (mode=dynamic, exp=5, attempt=0) ...
+[0;36m[03:48:26][0m   data_collector PID = 23111
+[0;36m[03:48:28][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[03:53:13][0m   goal_sender 退出码 = 0
+[0;36m[03:53:13][0m   result = succeeded (写入 /tmp/result_dynamic_5_0.txt)
+[0;36m[03:53:13][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[03:53:13][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[03:53:13] ✔ 数据已落盘[0m
+[0;32m[03:53:16] ✔ 实验 dynamic #5 成功 (attempt=0)[0m
+
+[0;36m[03:53:21][0m ═══ dynamic 实验 6/25 ═══
+[0;36m[03:53:21][0m 尝试 0/1 ...
+[0;36m[03:53:22][0m 重置行人到初始位置...
+[0;32m[03:53:23] ✔ 行人已重置[0m
+[0;36m[03:53:25][0m 启动 data_collector (mode=dynamic, exp=6, attempt=0) ...
+[0;36m[03:53:25][0m   data_collector PID = 23492
+[0;36m[03:53:27][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[03:58:08][0m   goal_sender 退出码 = 0
+[0;36m[03:58:08][0m   result = succeeded (写入 /tmp/result_dynamic_6_0.txt)
+[0;36m[03:58:08][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[03:58:08][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[03:58:08] ✔ 数据已落盘[0m
+[0;32m[03:58:11] ✔ 实验 dynamic #6 成功 (attempt=0)[0m
+
+[0;36m[03:58:16][0m ═══ dynamic 实验 7/25 ═══
+[0;36m[03:58:16][0m 尝试 0/1 ...
+[0;36m[03:58:17][0m 重置行人到初始位置...
+[0;32m[03:58:19] ✔ 行人已重置[0m
+[0;36m[03:58:21][0m 启动 data_collector (mode=dynamic, exp=7, attempt=0) ...
+[0;36m[03:58:21][0m   data_collector PID = 23865
+[0;36m[03:58:23][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[04:02:59][0m   goal_sender 退出码 = 0
+[0;36m[04:02:59][0m   result = succeeded (写入 /tmp/result_dynamic_7_0.txt)
+[0;36m[04:02:59][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[04:02:59][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[04:02:59] ✔ 数据已落盘[0m
+[0;32m[04:03:01] ✔ 实验 dynamic #7 成功 (attempt=0)[0m
+
+[0;36m[04:03:06][0m ═══ dynamic 实验 8/25 ═══
+[0;36m[04:03:06][0m 尝试 0/1 ...
+[0;36m[04:03:08][0m 重置行人到初始位置...
+[0;32m[04:03:09] ✔ 行人已重置[0m
+[0;36m[04:03:11][0m 启动 data_collector (mode=dynamic, exp=8, attempt=0) ...
+[0;36m[04:03:11][0m   data_collector PID = 24234
+[0;36m[04:03:13][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[04:07:49][0m   goal_sender 退出码 = 0
+[0;36m[04:07:49][0m   result = succeeded (写入 /tmp/result_dynamic_8_0.txt)
+[0;36m[04:07:49][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[04:07:49][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[04:07:50] ✔ data_collector 已退出[0m
+[0;32m[04:07:51] ✔ 实验 dynamic #8 成功 (attempt=0)[0m
+
+[0;36m[04:07:56][0m ═══ dynamic 实验 9/25 ═══
+[0;36m[04:07:56][0m 尝试 0/1 ...
+[0;36m[04:07:58][0m 重置行人到初始位置...
+[0;32m[04:07:59] ✔ 行人已重置[0m
+[0;36m[04:08:01][0m 启动 data_collector (mode=dynamic, exp=9, attempt=0) ...
+[0;36m[04:08:01][0m   data_collector PID = 24607
+[0;36m[04:08:03][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[04:12:38][0m   goal_sender 退出码 = 0
+[0;36m[04:12:38][0m   result = succeeded (写入 /tmp/result_dynamic_9_0.txt)
+[0;36m[04:12:38][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[04:12:38][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[04:12:39] ✔ data_collector 已退出[0m
+[0;32m[04:12:39] ✔ 实验 dynamic #9 成功 (attempt=0)[0m
+
+[0;36m[04:12:44][0m ═══ dynamic 实验 10/25 ═══
+[0;36m[04:12:44][0m 尝试 0/1 ...
+[0;36m[04:12:46][0m 重置行人到初始位置...
+[0;32m[04:12:47] ✔ 行人已重置[0m
+[0;36m[04:12:49][0m 启动 data_collector (mode=dynamic, exp=10, attempt=0) ...
+[0;36m[04:12:49][0m   data_collector PID = 24983
+[0;36m[04:12:51][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[04:17:30][0m   goal_sender 退出码 = 0
+[0;36m[04:17:30][0m   result = succeeded (写入 /tmp/result_dynamic_10_0.txt)
+[0;36m[04:17:30][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[04:17:30][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[04:17:31] ✔ data_collector 已退出[0m
+[0;32m[04:17:31] ✔ 实验 dynamic #10 成功 (attempt=0)[0m
+
+[0;36m[04:17:36][0m ═══ dynamic 实验 11/25 ═══
+[0;36m[04:17:36][0m 尝试 0/1 ...
+[0;36m[04:17:38][0m 重置行人到初始位置...
+[0;32m[04:17:39] ✔ 行人已重置[0m
+[0;36m[04:17:41][0m 启动 data_collector (mode=dynamic, exp=11, attempt=0) ...
+[0;36m[04:17:41][0m   data_collector PID = 25355
+[0;36m[04:17:43][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[04:22:26][0m   goal_sender 退出码 = 0
+[0;36m[04:22:26][0m   result = succeeded (写入 /tmp/result_dynamic_11_0.txt)
+[0;36m[04:22:26][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[04:22:26][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[04:22:26] ✔ 数据已落盘[0m
+[0;32m[04:22:29] ✔ 实验 dynamic #11 成功 (attempt=0)[0m
+
+[0;36m[04:22:34][0m ═══ dynamic 实验 12/25 ═══
+[0;36m[04:22:34][0m 尝试 0/1 ...
+[0;36m[04:22:36][0m 重置行人到初始位置...
+[0;32m[04:22:37] ✔ 行人已重置[0m
+[0;36m[04:22:39][0m 启动 data_collector (mode=dynamic, exp=12, attempt=0) ...
+[0;36m[04:22:39][0m   data_collector PID = 25750
+[0;36m[04:22:41][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[04:27:19][0m   goal_sender 退出码 = 0
+[0;36m[04:27:19][0m   result = succeeded (写入 /tmp/result_dynamic_12_0.txt)
+[0;36m[04:27:19][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[04:27:19][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[04:27:19] ✔ 数据已落盘[0m
+[0;32m[04:27:21] ✔ 实验 dynamic #12 成功 (attempt=0)[0m
+
+[0;36m[04:27:26][0m ═══ dynamic 实验 13/25 ═══
+[0;36m[04:27:26][0m 尝试 0/1 ...
+[0;36m[04:27:28][0m 重置行人到初始位置...
+[0;32m[04:27:29] ✔ 行人已重置[0m
+[0;36m[04:27:31][0m 启动 data_collector (mode=dynamic, exp=13, attempt=0) ...
+[0;36m[04:27:31][0m   data_collector PID = 26118
+[0;36m[04:27:33][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[04:32:11][0m   goal_sender 退出码 = 0
+[0;36m[04:32:12][0m   result = succeeded (写入 /tmp/result_dynamic_13_0.txt)
+[0;36m[04:32:12][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[04:32:12][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[04:32:13] ✔ data_collector 已退出[0m
+[0;32m[04:32:13] ✔ 实验 dynamic #13 成功 (attempt=0)[0m
+
+[0;36m[04:32:18][0m ═══ dynamic 实验 14/25 ═══
+[0;36m[04:32:18][0m 尝试 0/1 ...
+[0;36m[04:32:20][0m 重置行人到初始位置...
+[0;32m[04:32:21] ✔ 行人已重置[0m
+[0;36m[04:32:23][0m 启动 data_collector (mode=dynamic, exp=14, attempt=0) ...
+[0;36m[04:32:23][0m   data_collector PID = 26488
+[0;36m[04:32:25][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[04:37:04][0m   goal_sender 退出码 = 0
+[0;36m[04:37:04][0m   result = succeeded (写入 /tmp/result_dynamic_14_0.txt)
+[0;36m[04:37:04][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[04:37:04][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[04:37:04] ✔ 数据已落盘[0m
+[0;32m[04:37:07] ✔ 实验 dynamic #14 成功 (attempt=0)[0m
+
+[0;36m[04:37:12][0m ═══ dynamic 实验 15/25 ═══
+[0;36m[04:37:12][0m 尝试 0/1 ...
+[0;36m[04:37:13][0m 重置行人到初始位置...
+[0;32m[04:37:14] ✔ 行人已重置[0m
+[0;36m[04:37:16][0m 启动 data_collector (mode=dynamic, exp=15, attempt=0) ...
+[0;36m[04:37:16][0m   data_collector PID = 26867
+[0;36m[04:37:18][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[04:41:55][0m   goal_sender 退出码 = 0
+[0;36m[04:41:55][0m   result = succeeded (写入 /tmp/result_dynamic_15_0.txt)
+[0;36m[04:41:55][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[04:41:55][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[04:41:55] ✔ 数据已落盘[0m
+[0;32m[04:41:57] ✔ 实验 dynamic #15 成功 (attempt=0)[0m
+
+[0;36m[04:42:03][0m ═══ dynamic 实验 16/25 ═══
+[0;36m[04:42:03][0m 尝试 0/1 ...
+[0;36m[04:42:04][0m 重置行人到初始位置...
+[0;32m[04:42:05] ✔ 行人已重置[0m
+[0;36m[04:42:07][0m 启动 data_collector (mode=dynamic, exp=16, attempt=0) ...
+[0;36m[04:42:07][0m   data_collector PID = 27237
+[0;36m[04:42:09][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[04:46:48][0m   goal_sender 退出码 = 0
+[0;36m[04:46:48][0m   result = succeeded (写入 /tmp/result_dynamic_16_0.txt)
+[0;36m[04:46:48][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[04:46:48][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[04:46:49] ✔ data_collector 已退出[0m
+[0;32m[04:46:50] ✔ 实验 dynamic #16 成功 (attempt=0)[0m
+
+[0;36m[04:46:55][0m ═══ dynamic 实验 17/25 ═══
+[0;36m[04:46:55][0m 尝试 0/1 ...
+[0;36m[04:46:57][0m 重置行人到初始位置...
+[0;32m[04:46:58] ✔ 行人已重置[0m
+[0;36m[04:47:00][0m 启动 data_collector (mode=dynamic, exp=17, attempt=0) ...
+[0;36m[04:47:00][0m   data_collector PID = 28154
+[0;36m[04:47:02][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[04:47:10][0m   goal_sender 退出码 = 2
+[0;36m[04:47:10][0m   result = aborted (写入 /tmp/result_dynamic_17_0.txt)
+[0;36m[04:47:10][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[04:47:10][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[04:47:11] ✔ data_collector 已退出[0m
+[1;33m[04:47:12] ⚠ 实验 dynamic #17 被 Nav2 abort (attempt=0)[0m
+[0;36m[04:47:12][0m 重置机器人位姿并重试...
+[0;36m[04:47:12][0m 重置机器人位姿 → (1.0, 0.0, yaw=0.0)
+[0;36m[04:47:12][0m   重置 bt_navigator 生命周期...
+Transitioning successful
+data: true
+
+publisher: beginning loop
+publishing #1: geometry_msgs.msg.PoseWithCovarianceStamped(header=std_msgs.msg.Header(stamp=builtin_interfaces.msg.Time(sec=0, nanosec=0), frame_id='map'), pose=geometry_msgs.msg.PoseWithCovariance(pose=geometry_msgs.msg.Pose(position=geometry_msgs.msg.Point(x=1.0, y=0.0, z=0.0), orientation=geometry_msgs.msg.Quaternion(x=0.0, y=0.0, z=0.0, w=1.0)), covariance=array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
+       0., 0.])))
+
+requester: making request: nav2_msgs.srv.ClearEntireCostmap_Request(request=std_msgs.msg.Empty())
+
+response:
+nav2_msgs.srv.ClearEntireCostmap_Response(response=std_msgs.msg.Empty())
+
+requester: making request: nav2_msgs.srv.ClearEntireCostmap_Request(request=std_msgs.msg.Empty())
+
+response:
+nav2_msgs.srv.ClearEntireCostmap_Response(response=std_msgs.msg.Empty())
+
+[0;32m[04:47:29] ✔ 机器人位姿已重置[0m
+[0;36m[04:47:34][0m 尝试 1/1 ...
+[0;36m[04:47:36][0m 重置行人到初始位置...
+[0;32m[04:47:37] ✔ 行人已重置[0m
+[0;36m[04:47:39][0m 启动 data_collector (mode=dynamic, exp=17, attempt=1) ...
+[0;36m[04:47:39][0m   data_collector PID = 28393
+[0;36m[04:47:41][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[04:52:45][0m   goal_sender 退出码 = 0
+[0;36m[04:52:45][0m   result = succeeded (写入 /tmp/result_dynamic_17_1.txt)
+[0;36m[04:52:45][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[04:52:45][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[04:52:46] ✔ data_collector 已退出[0m
+[0;32m[04:52:47] ✔ 实验 dynamic #17 成功 (attempt=1)[0m
+
+[0;36m[04:52:52][0m ═══ dynamic 实验 18/25 ═══
+[0;36m[04:52:52][0m 尝试 0/1 ...
+[0;36m[04:52:53][0m 重置行人到初始位置...
+[0;32m[04:52:55] ✔ 行人已重置[0m
+[0;36m[04:52:57][0m 启动 data_collector (mode=dynamic, exp=18, attempt=0) ...
+[0;36m[04:52:57][0m   data_collector PID = 28820
+[0;36m[04:52:59][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[04:57:35][0m   goal_sender 退出码 = 0
+[0;36m[04:57:35][0m   result = succeeded (写入 /tmp/result_dynamic_18_0.txt)
+[0;36m[04:57:35][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[04:57:35][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[04:57:36] ✔ data_collector 已退出[0m
+[0;32m[04:57:37] ✔ 实验 dynamic #18 成功 (attempt=0)[0m
+
+[0;36m[04:57:42][0m ═══ dynamic 实验 19/25 ═══
+[0;36m[04:57:42][0m 尝试 0/1 ...
+[0;36m[04:57:44][0m 重置行人到初始位置...
+[0;32m[04:57:45] ✔ 行人已重置[0m
+[0;36m[04:57:47][0m 启动 data_collector (mode=dynamic, exp=19, attempt=0) ...
+[0;36m[04:57:47][0m   data_collector PID = 29187
+[0;36m[04:57:49][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[05:02:23][0m   goal_sender 退出码 = 0
+[0;36m[05:02:23][0m   result = succeeded (写入 /tmp/result_dynamic_19_0.txt)
+[0;36m[05:02:23][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[05:02:23][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[05:02:23] ✔ 数据已落盘[0m
+[0;32m[05:02:26] ✔ 实验 dynamic #19 成功 (attempt=0)[0m
+
+[0;36m[05:02:31][0m ═══ dynamic 实验 20/25 ═══
+[0;36m[05:02:31][0m 尝试 0/1 ...
+[0;36m[05:02:32][0m 重置行人到初始位置...
+[0;32m[05:02:34] ✔ 行人已重置[0m
+[0;36m[05:02:36][0m 启动 data_collector (mode=dynamic, exp=20, attempt=0) ...
+[0;36m[05:02:36][0m   data_collector PID = 29550
+[0;36m[05:02:38][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[05:07:13][0m   goal_sender 退出码 = 0
+[0;36m[05:07:13][0m   result = succeeded (写入 /tmp/result_dynamic_20_0.txt)
+[0;36m[05:07:13][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[05:07:13][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[05:07:14] ✔ data_collector 已退出[0m
+[0;32m[05:07:15] ✔ 实验 dynamic #20 成功 (attempt=0)[0m
+
+[0;36m[05:07:20][0m ═══ dynamic 实验 21/25 ═══
+[0;36m[05:07:20][0m 尝试 0/1 ...
+[0;36m[05:07:21][0m 重置行人到初始位置...
+[0;32m[05:07:22] ✔ 行人已重置[0m
+[0;36m[05:07:24][0m 启动 data_collector (mode=dynamic, exp=21, attempt=0) ...
+[0;36m[05:07:24][0m   data_collector PID = 29923
+[0;36m[05:07:26][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[05:12:10][0m   goal_sender 退出码 = 0
+[0;36m[05:12:10][0m   result = succeeded (写入 /tmp/result_dynamic_21_0.txt)
+[0;36m[05:12:10][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[05:12:10][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[05:12:11] ✔ data_collector 已退出[0m
+[0;32m[05:12:12] ✔ 实验 dynamic #21 成功 (attempt=0)[0m
+
+[0;36m[05:12:17][0m ═══ dynamic 实验 22/25 ═══
+[0;36m[05:12:17][0m 尝试 0/1 ...
+[0;36m[05:12:19][0m 重置行人到初始位置...
+[0;32m[05:12:20] ✔ 行人已重置[0m
+[0;36m[05:12:22][0m 启动 data_collector (mode=dynamic, exp=22, attempt=0) ...
+[0;36m[05:12:22][0m   data_collector PID = 30300
+[0;36m[05:12:24][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[05:16:53][0m   goal_sender 退出码 = 0
+[0;36m[05:16:53][0m   result = succeeded (写入 /tmp/result_dynamic_22_0.txt)
+[0;36m[05:16:53][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[05:16:53][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[05:16:54] ✔ data_collector 已退出[0m
+[0;32m[05:16:55] ✔ 实验 dynamic #22 成功 (attempt=0)[0m
+
+[0;36m[05:17:00][0m ═══ dynamic 实验 23/25 ═══
+[0;36m[05:17:00][0m 尝试 0/1 ...
+[0;36m[05:17:02][0m 重置行人到初始位置...
+[0;32m[05:17:03] ✔ 行人已重置[0m
+[0;36m[05:17:05][0m 启动 data_collector (mode=dynamic, exp=23, attempt=0) ...
+[0;36m[05:17:05][0m   data_collector PID = 30664
+[0;36m[05:17:07][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[05:21:42][0m   goal_sender 退出码 = 0
+[0;36m[05:21:42][0m   result = succeeded (写入 /tmp/result_dynamic_23_0.txt)
+[0;36m[05:21:42][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[05:21:42][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[05:21:42] ✔ 数据已落盘[0m
+[0;32m[05:21:44] ✔ 实验 dynamic #23 成功 (attempt=0)[0m
+
+[0;36m[05:21:49][0m ═══ dynamic 实验 24/25 ═══
+[0;36m[05:21:49][0m 尝试 0/1 ...
+[0;36m[05:21:51][0m 重置行人到初始位置...
+[0;32m[05:21:52] ✔ 行人已重置[0m
+[0;36m[05:21:54][0m 启动 data_collector (mode=dynamic, exp=24, attempt=0) ...
+[0;36m[05:21:54][0m   data_collector PID = 31047
+[0;36m[05:21:56][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[05:26:34][0m   goal_sender 退出码 = 0
+[0;36m[05:26:34][0m   result = succeeded (写入 /tmp/result_dynamic_24_0.txt)
+[0;36m[05:26:34][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[05:26:34][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[05:26:34] ✔ 数据已落盘[0m
+[0;32m[05:26:36] ✔ 实验 dynamic #24 成功 (attempt=0)[0m
+
+[0;36m[05:26:41][0m ═══ dynamic 实验 25/25 ═══
+[0;36m[05:26:41][0m 尝试 0/1 ...
+[0;36m[05:26:43][0m 重置行人到初始位置...
+[0;32m[05:26:45] ✔ 行人已重置[0m
+[0;36m[05:26:47][0m 启动 data_collector (mode=dynamic, exp=25, attempt=0) ...
+[0;36m[05:26:47][0m   data_collector PID = 31415
+[0;36m[05:26:49][0m 启动 goal_sender (timeout=disabled) ...
+[0;36m[05:31:21][0m   goal_sender 退出码 = 0
+[0;36m[05:31:21][0m   result = succeeded (写入 /tmp/result_dynamic_25_0.txt)
+[0;36m[05:31:21][0m 发送 SIGUSR1 给 data_collector ...
+[0;36m[05:31:21][0m 等待 data_collector 写入 CSV (最多 30s) ...
+[0;32m[05:31:22] ✔ data_collector 已退出[0m
+[0;32m[05:31:23] ✔ 实验 dynamic #25 成功 (attempt=0)[0m
+[0;32m[05:31:28] ✔ 模式 dynamic 全部实验完成，清理...[0m
+[0;36m[05:31:28][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[05:31:42][0m 清理完成
+[0;36m[05:31:42][0m Mode 间冷却 15s ...
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║                   全部实验完成!                      ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  [0;32m成功: 25[0m[1m    [1;33m跳过: 0[0m[1m    总计: 25[0m
+[1m║  耗时: [0m130分25秒
+[1m║  CSV 结果: [0m/home/dx/ros2_ws/A/dyn_clean.csv
+[1m║  日志目录: [0m/tmp/launch_*.log, /tmp/collector_*.log, /tmp/sender_*.log
+[1m╚═══════════════════════════════════════════════════════╝[0m
+[0;36m[05:31:57][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[05:32:10][0m 清理完成
+[2026-04-28 05:32:10] Mode dynamic finished with exit_code=0.
+[2026-04-28 05:32:10] Next mode index=1. Rebooting in 20s.
+[2026-04-28 05:32:43] ============================================================
+[2026-04-28 05:32:43] Starting mode index=1, mode=social, runs=25
+[2026-04-28 05:32:43] CSV: /home/dx/ros2_ws/A/soc_clean.csv
+[2026-04-28 05:32:43] Mode log: /home/dx/ros2_ws/A/run_logs/social_20260428_053243.log
+[2026-04-28 05:32:43] Experiment script: /home/dx/CPE631-Navigation-ROS2-main/codefiles/run_all_experiments.sh
+[2026-04-28 05:32:43] ============================================================
+[0;32m[05:32:44] ✔ 包目录: /home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main[0m
+[0;36m[05:32:44][0m 同步 launch/param/worlds/models 到 workspace 包 ...
+[0;32m[05:32:44] ✔ 资源文件已同步[0m
+[0;36m[05:32:44][0m 复制 codefiles/ → cpe631_ros2/ ...
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/ped_pose_extractor.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/ped_pose_extractor.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/social_nav_node.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/social_nav_node.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/data_collector.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/data_collector.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/peds.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/peds.py'
+[0;32m[05:32:44] ✔ 改进版代码已复制[0m
+[0;36m[05:32:44][0m 在 /home/dx/ros2_ws/A 执行 colcon build ...
+Starting >>> cpe631_ros2
+Finished <<< cpe631_ros2 [1.16s]
+
+Summary: 1 package finished [1.36s]
+[0;32m[05:32:46] ✔ 编译完成[0m
+[0;32m[05:32:47] ✔ 已 source workspace[0m
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║     ROS2 Social Navigation 三组对比实验 自动脚本 v3  ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  工作区: [0m/home/dx/ros2_ws/A
+[1m║  路线:   [0m0.5,-6.5,2.08;-3.5,0.0,0.89;2.5,6.0,-2.75;-2.0,2.1,-1.10;2.0,-4.0,-2.16
+[1m║  每组重复: [0m25 次[1m  MAX_RETRY: [0m1
+[1m║  总计: [0m25 次实验
+[1m╚═══════════════════════════════════════════════════════╝[0m
+
+
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1m  开始模式: [0;36msocial[0m
+[1m  navigation=true  social_navigation=true  enable_peds=true  planner=navfn[0m
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[05:32:47][0m 启动 cafe_dynamic.launch.py (mode=social, planner=navfn) ...
+[0;36m[05:32:47][0m   launch PID = 2167
+[0;36m[05:32:47][0m 等待 45s 让仿真完全启动...
+[0;32m[05:33:32] ✔ 仿真已启动[0m
+[0;36m[05:33:37][0m 验证 Nav2 节点就绪状态...
+[0;36m[05:34:04][0m   仍在等待 bt_navigator 激活 (15s, 当前状态: inactive)...
+[0;36m[05:34:33][0m   仍在等待 bt_navigator 激活 (30s, 当前状态: inactive)...
+[0;36m[05:35:03][0m   仍在等待 bt_navigator 激活 (45s, 当前状态: inactive)...
+[0;36m[05:35:37][0m   仍在等待 bt_navigator 激活 (60s, 当前状态: 未知)...
+[0;36m[05:36:03][0m   仍在等待 bt_navigator 激活 (75s, 当前状态: inactive)...
+[0;36m[05:36:30][0m   仍在等待 bt_navigator 激活 (90s, 当前状态: inactive)...
+[0;36m[05:37:00][0m   仍在等待 bt_navigator 激活 (105s, 当前状态: inactive)...
+[0;36m[05:37:28][0m   仍在等待 bt_navigator 激活 (120s, 当前状态: inactive)...
+[0;36m[05:37:58][0m   仍在等待 bt_navigator 激活 (135s, 当前状态: inactive)...
+[0;36m[05:38:27][0m   仍在等待 bt_navigator 激活 (150s, 当前状态: inactive)...
+[0;36m[05:38:57][0m   仍在等待 bt_navigator 激活 (165s, 当前状态: inactive)...
+[0;36m[05:39:24][0m   仍在等待 bt_navigator 激活 (180s, 当前状态: inactive)...
+[0;31m[05:39:24] ✘ bt_navigator 未在 180s 内就绪[0m
+[0;31m[05:39:24] ✘ 模式 social 仿真启动失败，跳过整个模式[0m
+[0;36m[05:39:24][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[05:39:37][0m 清理完成
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║                   全部实验完成!                      ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  [0;32m成功: 0[0m[1m    [1;33m跳过: 0[0m[1m    总计: 25[0m
+[1m║  耗时: [0m7分5秒
+[1m║  CSV 结果: [0m/home/dx/ros2_ws/A/soc_clean.csv
+[1m║  日志目录: [0m/tmp/launch_*.log, /tmp/collector_*.log, /tmp/sender_*.log
+[1m╚═══════════════════════════════════════════════════════╝[0m
+[0;36m[05:39:52][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[05:40:04][0m 清理完成
+[2026-04-28 05:40:04] Mode social finished with exit_code=0.
+[2026-04-28 05:40:04] Next mode index=2. Rebooting in 20s.
+[2026-04-28 05:42:07] ============================================================
+[2026-04-28 05:42:07] Starting mode index=2, mode=social_astar, runs=25
+[2026-04-28 05:42:07] CSV: /home/dx/ros2_ws/A/astar_clean.csv
+[2026-04-28 05:42:07] Mode log: /home/dx/ros2_ws/A/run_logs/social_astar_20260428_054207.log
+[2026-04-28 05:42:07] Experiment script: /home/dx/CPE631-Navigation-ROS2-main/codefiles/run_all_experiments.sh
+[2026-04-28 05:42:07] ============================================================
+[0;32m[05:42:07] ✔ 包目录: /home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main[0m
+[0;36m[05:42:07][0m 同步 launch/param/worlds/models 到 workspace 包 ...
+[0;32m[05:42:08] ✔ 资源文件已同步[0m
+[0;36m[05:42:08][0m 复制 codefiles/ → cpe631_ros2/ ...
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/ped_pose_extractor.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/ped_pose_extractor.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/social_nav_node.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/social_nav_node.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/data_collector.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/data_collector.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/peds.py' -> '/home/dx/ros2_ws/A/CPE631-Navigation-ROS2-main/cpe631_ros2/peds.py'
+[0;32m[05:42:08] ✔ 改进版代码已复制[0m
+[0;36m[05:42:08][0m 在 /home/dx/ros2_ws/A 执行 colcon build ...
+Starting >>> cpe631_ros2
+Finished <<< cpe631_ros2 [1.03s]
+
+Summary: 1 package finished [1.19s]
+[0;32m[05:42:09] ✔ 编译完成[0m
+[0;32m[05:42:10] ✔ 已 source workspace[0m
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║     ROS2 Social Navigation 三组对比实验 自动脚本 v3  ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  工作区: [0m/home/dx/ros2_ws/A
+[1m║  路线:   [0m0.5,-6.5,2.08;-3.5,0.0,0.89;2.5,6.0,-2.75;-2.0,2.1,-1.10;2.0,-4.0,-2.16
+[1m║  每组重复: [0m25 次[1m  MAX_RETRY: [0m1
+[1m║  总计: [0m25 次实验
+[1m╚═══════════════════════════════════════════════════════╝[0m
+
+
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1m  开始模式: [0;36msocial_astar[0m
+[1m  navigation=true  social_navigation=true  enable_peds=true  planner=astar[0m
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[05:42:10][0m 启动 cafe_dynamic.launch.py (mode=social_astar, planner=astar) ...
+[0;36m[05:42:10][0m   launch PID = 1933
+[0;36m[05:42:10][0m 等待 45s 让仿真完全启动...
+[0;32m[05:42:55] ✔ 仿真已启动[0m
+[0;36m[05:43:00][0m 验证 Nav2 节点就绪状态...
+[0;36m[05:43:32][0m   仍在等待 bt_navigator 激活 (15s, 当前状态: inactive)...
+[0;36m[05:44:05][0m   仍在等待 bt_navigator 激活 (30s, 当前状态: inactive)...
+[0;36m[05:44:30][0m   仍在等待 bt_navigator 激活 (45s, 当前状态: inactive)...
+[0;36m[05:45:01][0m   仍在等待 bt_navigator 激活 (60s, 当前状态: inactive)...
+[0;36m[05:45:32][0m   仍在等待 bt_navigator 激活 (75s, 当前状态: inactive)...
+[0;36m[05:46:02][0m   仍在等待 bt_navigator 激活 (90s, 当前状态: inactive)...
+[0;36m[05:46:33][0m   仍在等待 bt_navigator 激活 (105s, 当前状态: inactive)...
+[0;36m[05:47:04][0m   仍在等待 bt_navigator 激活 (120s, 当前状态: inactive)...
+[0;36m[05:47:35][0m   仍在等待 bt_navigator 激活 (135s, 当前状态: inactive)...
+[0;36m[05:48:01][0m   仍在等待 bt_navigator 激活 (150s, 当前状态: inactive)...
+[0;36m[05:48:31][0m   仍在等待 bt_navigator 激活 (165s, 当前状态: inactive)...
+[0;36m[05:49:01][0m   仍在等待 bt_navigator 激活 (180s, 当前状态: inactive)...
+[0;31m[05:49:01] ✘ bt_navigator 未在 180s 内就绪[0m
+[0;31m[05:49:01] ✘ 模式 social_astar 仿真启动失败，跳过整个模式[0m
+[0;36m[05:49:01][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[05:49:14][0m 清理完成
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║                   全部实验完成!                      ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  [0;32m成功: 0[0m[1m    [1;33m跳过: 0[0m[1m    总计: 25[0m
+[1m║  耗时: [0m7分19秒
+[1m║  CSV 结果: [0m/home/dx/ros2_ws/A/astar_clean.csv
+[1m║  日志目录: [0m/tmp/launch_*.log, /tmp/collector_*.log, /tmp/sender_*.log
+[1m╚═══════════════════════════════════════════════════════╝[0m
+[0;36m[05:49:29][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[05:49:41][0m 清理完成
+[2026-04-28 05:49:41] Mode social_astar finished with exit_code=0.
+[2026-04-28 05:49:41] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-28 11:13:29] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-28 15:02:17] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-28 16:20:33] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-28 22:28:12] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-28 23:15:35] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-29 00:24:51] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-29 02:13:14] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-29 03:10:13] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-29 03:10:53] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-29 03:11:24] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-29 10:47:11] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-29 19:08:34] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 01:16:02] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 01:39:43] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 04:41:46] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 14:58:09] ============================================================
+[2026-04-30 14:58:09] Starting mode index=3, mode=social_smac, runs=25
+[2026-04-30 14:58:09] CSV: /home/dx/ros2_ws/A/smac_clean.csv
+[2026-04-30 14:58:09] Mode log: /home/dx/ros2_ws/A/run_logs/social_smac_20260430_145809.log
+[2026-04-30 14:58:09] Experiment script: /home/dx/CPE631-Navigation-ROS2-main/codefiles/run_all_experiments.sh
+[2026-04-30 14:58:09] ============================================================
+[0;32m[14:58:09] ✔ 包目录: /home/dx/CPE631-Navigation-ROS2-main[0m
+[0;36m[14:58:09][0m 同步 launch/param/worlds/models 到 workspace 包 ...
+[0;32m[14:58:09] ✔ 资源文件已同步[0m
+[0;36m[14:58:09][0m 复制 codefiles/ → cpe631_ros2/ ...
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/ped_pose_extractor.py' -> '/home/dx/CPE631-Navigation-ROS2-main/cpe631_ros2/ped_pose_extractor.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/social_nav_node.py' -> '/home/dx/CPE631-Navigation-ROS2-main/cpe631_ros2/social_nav_node.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/data_collector.py' -> '/home/dx/CPE631-Navigation-ROS2-main/cpe631_ros2/data_collector.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/goal_sender.py' -> '/home/dx/CPE631-Navigation-ROS2-main/cpe631_ros2/goal_sender.py'
+'/home/dx/CPE631-Navigation-ROS2-main/codefiles/peds.py' -> '/home/dx/CPE631-Navigation-ROS2-main/cpe631_ros2/peds.py'
+[0;32m[14:58:09] ✔ 改进版代码已复制[0m
+[0;36m[14:58:09][0m 在 /home/dx/CPE631-Navigation-ROS2-main 执行 colcon build ...
+Starting >>> cpe631_ros2
+Finished <<< cpe631_ros2 [0.69s]
+
+Summary: 1 package finished [0.83s]
+[0;32m[14:58:10] ✔ 编译完成[0m
+[0;32m[14:58:11] ✔ 已 source workspace[0m
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║     ROS2 Social Navigation 三组对比实验 自动脚本 v3  ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  工作区: [0m/home/dx/CPE631-Navigation-ROS2-main
+[1m║  路线:   [0m0.5,-6.5,2.08;-3.5,0.0,0.89;2.5,6.0,-2.75;-2.0,2.1,-1.10;2.0,-4.0,-2.16
+[1m║  每组重复: [0m25 次[1m  MAX_RETRY: [0m1
+[1m║  总计: [0m25 次实验
+[1m╚═══════════════════════════════════════════════════════╝[0m
+
+
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1m  开始模式: [0;36msocial_smac[0m
+[1m  navigation=true  social_navigation=true  enable_peds=true  planner=smac[0m
+[1m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;36m[14:58:11][0m 启动 cafe_dynamic.launch.py (mode=social_smac, planner=smac) ...
+[0;36m[14:58:11][0m   launch PID = 1934
+[0;36m[14:58:11][0m 等待 45s 让仿真完全启动...
+[0;32m[14:58:56] ✔ 仿真已启动[0m
+[0;36m[14:59:01][0m 验证 Nav2 节点就绪状态...
+[0;36m[14:59:32][0m   仍在等待 bt_navigator 激活 (15s, 当前状态: inactive)...
+[0;36m[15:00:03][0m   仍在等待 bt_navigator 激活 (30s, 当前状态: inactive)...
+[0;36m[15:00:28][0m   仍在等待 bt_navigator 激活 (45s, 当前状态: inactive)...
+[0;36m[15:00:57][0m   仍在等待 bt_navigator 激活 (60s, 当前状态: inactive)...
+[0;36m[15:01:31][0m   仍在等待 bt_navigator 激活 (75s, 当前状态: inactive)...
+[0;36m[15:02:00][0m   仍在等待 bt_navigator 激活 (90s, 当前状态: inactive)...
+[0;36m[15:02:23][0m   仍在等待 bt_navigator 激活 (105s, 当前状态: inactive)...
+[0;36m[15:02:51][0m   仍在等待 bt_navigator 激活 (120s, 当前状态: inactive)...
+[0;36m[15:03:19][0m   仍在等待 bt_navigator 激活 (135s, 当前状态: inactive)...
+[0;36m[15:03:49][0m   仍在等待 bt_navigator 激活 (150s, 当前状态: inactive)...
+[0;36m[15:04:15][0m   仍在等待 bt_navigator 激活 (165s, 当前状态: inactive)...
+[0;36m[15:04:45][0m   仍在等待 bt_navigator 激活 (180s, 当前状态: inactive)...
+[0;31m[15:04:45] ✘ bt_navigator 未在 180s 内就绪[0m
+[0;31m[15:04:45] ✘ 模式 social_smac 仿真启动失败，跳过整个模式[0m
+[0;36m[15:04:45][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[15:04:58][0m 清理完成
+
+[1m╔═══════════════════════════════════════════════════════╗[0m
+[1m║                   全部实验完成!                      ║[0m
+[1m╠═══════════════════════════════════════════════════════╣[0m
+[1m║  [0;32m成功: 0[0m[1m    [1;33m跳过: 0[0m[1m    总计: 25[0m
+[1m║  耗时: [0m7分2秒
+[1m║  CSV 结果: [0m/home/dx/ros2_ws/A/smac_clean.csv
+[1m║  日志目录: [0m/tmp/launch_*.log, /tmp/collector_*.log, /tmp/sender_*.log
+[1m╚═══════════════════════════════════════════════════════╝[0m
+[0;36m[15:05:13][0m 清理所有后台进程...
+The daemon has been stopped
+The daemon has been started
+[0;36m[15:05:26][0m 清理完成
+[2026-04-30 15:05:26] Mode social_smac finished with exit_code=0.
+[2026-04-30 15:05:26] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 15:30:51] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 17:11:40] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 17:30:15] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 18:21:25] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 18:58:04] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 19:05:34] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 19:58:05] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 20:01:53] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 20:02:16] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 21:50:30] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-04-30 23:18:44] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-05-01 00:47:37] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-05-01 01:22:16] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-05-01 03:22:00] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-05-01 10:31:27] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-05-01 11:36:49] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-05-01 12:40:33] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-05-01 12:54:24] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-05-01 13:03:17] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录
+[2026-05-01 15:07:51] All modes completed. Removing @reboot cron entry.
+rm: 无法删除 '/home/dx/ros2_ws/A/.exp_reboot.lock': 是一个目录

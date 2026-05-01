@@ -1,0 +1,22 @@
+running develop
+running egg_info
+writing cpe631_ros2.egg-info/PKG-INFO
+writing dependency_links to cpe631_ros2.egg-info/dependency_links.txt
+writing entry points to cpe631_ros2.egg-info/entry_points.txt
+writing requirements to cpe631_ros2.egg-info/requires.txt
+writing top-level names to cpe631_ros2.egg-info/top_level.txt
+reading manifest file 'cpe631_ros2.egg-info/SOURCES.txt'
+writing manifest file 'cpe631_ros2.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/dx/ros2_ws/A/install/cpe631_ros2/lib/python3.12/site-packages/cpe631-ros2.egg-link (link to .)
+Installing cpe631_map_republisher script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+Installing cpe631_peds script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+Installing cpe631_teleop script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+Installing data_collector script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+Installing goal_sender script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+Installing ped_pose_extractor script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+Installing social_nav_node script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+
+Installed /home/dx/ros2_ws/A/build/cpe631_ros2
+running symlink_data
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/param/custom_bt.xml -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/param

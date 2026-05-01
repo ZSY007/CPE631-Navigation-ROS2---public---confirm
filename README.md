@@ -19,10 +19,6 @@ For the detailed project write-up and implementation summary, see:
 
 ## Based on / 参考环境
 
-本仓库基于 SIT Robotics 提供的室内人类交互环境（The Environment），并以其为基础进行修改和实验。参考仓库：
-
-https://github.com/SIT-Robotics-and-Automation-Laboratory/CPE631-Navigation-ROS2
-
 The Environment: An indoor human environment has been created, see the following
 Github site on Human Robot Interaction Environment:
 https://github.com/SIT-Robotics-and-Automation-Laboratory/CPE631-Navigation-ROS2

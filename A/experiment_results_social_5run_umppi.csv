@@ -1,0 +1,6 @@
+experiment,mode,result,attempt,path_length_m,time_s,encounters,personal_violations,intimate_violations,min_ped_dist_m,mean_angular_acceleration
+1,social,succeeded,0,36.263,285.84,18,23,12,0.012,0.3173
+2,social,succeeded,0,32.101,181.9,13,14,6,0.207,0.2903
+3,social,succeeded,0,32.178,181.27,15,18,11,0.127,0.2766
+4,social,succeeded,0,32.264,196.24,14,20,4,0.073,0.3028
+5,social,succeeded,0,32.283,195.98,7,5,4,0.021,0.3402

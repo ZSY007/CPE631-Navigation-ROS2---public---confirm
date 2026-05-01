@@ -1,0 +1,2 @@
+experiment,mode,result,attempt,path_length_m,time_s,encounters,personal_violations,intimate_violations,min_ped_dist_m,mean_angular_acceleration
+1,social,aborted,0,20.037,54.09,6,6,2,0.072,0.4767

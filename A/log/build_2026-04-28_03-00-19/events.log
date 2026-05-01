@@ -1,0 +1,36 @@
+[0.000000] (-) TimerEvent: {}
+[0.000610] (cpe631_ros2) JobQueued: {'identifier': 'cpe631_ros2', 'dependencies': OrderedDict()}
+[0.000636] (cpe631_ros2) JobStarted: {'identifier': 'cpe631_ros2'}
+[0.099700] (-) TimerEvent: {}
+[0.199826] (-) TimerEvent: {}
+[0.299975] (-) TimerEvent: {}
+[0.400113] (-) TimerEvent: {}
+[0.500250] (-) TimerEvent: {}
+[0.577598] (cpe631_ros2) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/dx/ros2_ws/A/build/cpe631_ros2/build', '--no-deps', 'symlink_data'], 'cwd': '/home/dx/ros2_ws/A/build/cpe631_ros2', 'env': {'SUDO_GID': '1000', 'MAIL': '/var/mail/root', 'USER': 'dx', 'ENABLE_RVIZ': '1', 'SHLVL': '3', 'HOME': '/home/dx', 'OLDPWD': '/home/dx/CPE631-Navigation-ROS2-main', 'MODES': 'dynamic', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'CSV_FILE': '/home/dx/ros2_ws/A/dyn_clean.csv', 'RUNS_PER_MODE': '25', 'SUDO_UID': '1000', 'LOGNAME': 'dx', '_': '/usr/bin/colcon', 'TERM': 'xterm-256color', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin', 'GZ_GUI': '1', 'DISPLAY': ':0', 'LANG': 'zh_CN.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.UPG1O3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SUDO_COMMAND': '/usr/bin/bash codefiles/setup_and_start.sh', 'SHELL': '/bin/bash', 'SUDO_USER': 'dx', 'RESET_PEDS_EACH_RUN': '1', 'PWD': '/home/dx/ros2_ws/A/build/cpe631_ros2', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'SKIP_BUILD': '0', 'COLCON': '1', 'PYTHONPATH': '/home/dx/ros2_ws/A/build/cpe631_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dx/ros2_ws/A/install/cpe631_ros2/lib/python3.12/site-packages:'}, 'shell': False}
+[0.600403] (-) TimerEvent: {}
+[0.700536] (-) TimerEvent: {}
+[0.740917] (cpe631_ros2) StdoutLine: {'line': b'running develop\n'}
+[0.800618] (-) TimerEvent: {}
+[0.807229] (cpe631_ros2) StdoutLine: {'line': b'running egg_info\n'}
+[0.812677] (cpe631_ros2) StdoutLine: {'line': b'writing cpe631_ros2.egg-info/PKG-INFO\n'}
+[0.812949] (cpe631_ros2) StdoutLine: {'line': b'writing dependency_links to cpe631_ros2.egg-info/dependency_links.txt\n'}
+[0.813170] (cpe631_ros2) StdoutLine: {'line': b'writing entry points to cpe631_ros2.egg-info/entry_points.txt\n'}
+[0.813365] (cpe631_ros2) StdoutLine: {'line': b'writing requirements to cpe631_ros2.egg-info/requires.txt\n'}
+[0.813624] (cpe631_ros2) StdoutLine: {'line': b'writing top-level names to cpe631_ros2.egg-info/top_level.txt\n'}
+[0.826328] (cpe631_ros2) StdoutLine: {'line': b"reading manifest file 'cpe631_ros2.egg-info/SOURCES.txt'\n"}
+[0.827940] (cpe631_ros2) StdoutLine: {'line': b"writing manifest file 'cpe631_ros2.egg-info/SOURCES.txt'\n"}
+[0.835008] (cpe631_ros2) StdoutLine: {'line': b'running build_ext\n'}
+[0.835185] (cpe631_ros2) StdoutLine: {'line': b'Creating /home/dx/ros2_ws/A/install/cpe631_ros2/lib/python3.12/site-packages/cpe631-ros2.egg-link (link to .)\n'}
+[0.835819] (cpe631_ros2) StdoutLine: {'line': b'Installing cpe631_map_republisher script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.836033] (cpe631_ros2) StdoutLine: {'line': b'Installing cpe631_peds script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.836190] (cpe631_ros2) StdoutLine: {'line': b'Installing cpe631_teleop script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.836283] (cpe631_ros2) StdoutLine: {'line': b'Installing data_collector script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.836500] (cpe631_ros2) StdoutLine: {'line': b'Installing goal_sender script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.836549] (cpe631_ros2) StdoutLine: {'line': b'Installing ped_pose_extractor script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.836587] (cpe631_ros2) StdoutLine: {'line': b'Installing social_nav_node script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.836680] (cpe631_ros2) StdoutLine: {'line': b'\n'}
+[0.836750] (cpe631_ros2) StdoutLine: {'line': b'Installed /home/dx/ros2_ws/A/build/cpe631_ros2\n'}
+[0.836797] (cpe631_ros2) StdoutLine: {'line': b'running symlink_data\n'}
+[0.868846] (cpe631_ros2) CommandEnded: {'returncode': 0}
+[0.882864] (cpe631_ros2) JobEnded: {'identifier': 'cpe631_ros2', 'rc': 0}
+[0.883773] (-) EventReactorShutdown: {}

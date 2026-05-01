@@ -1,0 +1,130 @@
+running develop
+running egg_info
+creating cpe631_ros2.egg-info
+writing cpe631_ros2.egg-info/PKG-INFO
+writing dependency_links to cpe631_ros2.egg-info/dependency_links.txt
+writing entry points to cpe631_ros2.egg-info/entry_points.txt
+writing requirements to cpe631_ros2.egg-info/requires.txt
+writing top-level names to cpe631_ros2.egg-info/top_level.txt
+writing manifest file 'cpe631_ros2.egg-info/SOURCES.txt'
+reading manifest file 'cpe631_ros2.egg-info/SOURCES.txt'
+writing manifest file 'cpe631_ros2.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/dx/ros2_ws/A/install/cpe631_ros2/lib/python3.12/site-packages/cpe631-ros2.egg-link (link to .)
+Installing cpe631_map_republisher script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+Installing cpe631_peds script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+Installing cpe631_teleop script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+Installing data_collector script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+Installing goal_sender script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+Installing ped_pose_extractor script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+Installing social_nav_node script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2
+
+Installed /home/dx/ros2_ws/A/build/cpe631_ros2
+running symlink_data
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/ament_index
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/ament_index/resource_index
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/ament_index/resource_index/packages
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/resource/cpe631_ros2 -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/ament_index/resource_index/packages
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/package.xml -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/launch
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/launch/cafe_dynamic.launch.py -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/launch
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/launch/cafe.launch.py -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/launch
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/launch/teleop.launch.py -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/launch
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/maps
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/maps/cafe.pgm -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/maps
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/maps/cafe.yaml -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/maps
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/worlds
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/worlds/cafe.world -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/worlds
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/rviz
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/rviz/navigation.rviz -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/rviz
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/rviz/gmapping.rviz -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/rviz
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/param
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/param/nav2_dynamic_conservative.yaml -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/param
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/param/nav2_burger.yaml -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/param
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/param/turtlebot3_burger_bridge_local.yaml -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/param
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/param/social_pose_bridge.yaml -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/param
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/param/nav2_social_dynamic.yaml -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/param
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/turtlebot3_burger
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/turtlebot3_burger/model.sdf -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/turtlebot3_burger
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/turtlebot3_burger/model-1_4.sdf -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/turtlebot3_burger
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/turtlebot3_burger/model.config -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/turtlebot3_burger
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/Target
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/Target/model.sdf -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/Target
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/Target/model.config -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/Target
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking_actor_1
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking_actor_1/model.sdf -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking_actor_1
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe_table
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe_table/model.sdf -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe_table
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe_table/model-1_4.sdf -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe_table
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe_table/model.config -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe_table
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/model.sdf -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/model.config -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking_actor_2
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking_actor_2/model.sdf -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking_actor_2
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/model.sdf -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/model.config -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking_actor
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking_actor/model.sdf -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking_actor
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/model.sdf -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/model.config -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking_actor_3
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking_actor_3/model.sdf -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking_actor_3
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe_table/meshes
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe_table/meshes/cafe_table.dae -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe_table/meshes
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe_table/materials
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe_table/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe_table/materials/textures/Maple.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe_table/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe_table/materials/textures/Wood_Floor_Dark.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe_table/materials/textures
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/meshes
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/meshes/walking.dae -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/meshes
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/materials
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/materials/textures/male02_diffuse_black.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/materials/textures/jeans_basic_diffuse.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/materials/textures/tshirt02_normals.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/materials/textures/eyebrow001-unmodified.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/materials/textures/young_lightskinned_male_diffuse.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/materials/textures/male02_diffuse_black-unmodified.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/materials/textures/green_eye.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/materials/textures/teeth.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/materials/textures/tshirt02_texture.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/materials/textures/eyebrow001.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_walking/materials/textures/jeans01_normals.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_walking/materials/textures
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/meshes
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/meshes/standing.dae -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/meshes
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/materials
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/materials/textures/male02_diffuse_black.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/materials/textures/jeans_basic_diffuse.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/materials/textures/tshirt02_normals.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/materials/textures/eyebrow001-unmodified.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/materials/textures/young_lightskinned_male_diffuse.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/materials/textures/male02_diffuse_black-unmodified.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/materials/textures/green_eye.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/materials/textures/teeth.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/materials/textures/tshirt02_texture.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/materials/textures/eyebrow001.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/person_standing/materials/textures/jeans01_normals.png -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/person_standing/materials/textures
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/meshes
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/meshes/cafe.dae -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/meshes
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials
+creating /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_35.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_37.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_24.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_31.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_10.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_22.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_25.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_28.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_30.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_21.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_34.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_26.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_29.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_2.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures
+symbolically linking /home/dx/ros2_ws/A/build/cpe631_ros2/models/cafe/materials/textures/__auto_23.jpg -> /home/dx/ros2_ws/A/install/cpe631_ros2/share/cpe631_ros2/models/cafe/materials/textures

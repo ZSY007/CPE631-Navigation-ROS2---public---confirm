@@ -1,0 +1,38 @@
+[0.000000] (-) TimerEvent: {}
+[0.000049] (cpe631_ros2) JobQueued: {'identifier': 'cpe631_ros2', 'dependencies': OrderedDict()}
+[0.000069] (cpe631_ros2) JobStarted: {'identifier': 'cpe631_ros2'}
+[0.099056] (-) TimerEvent: {}
+[0.199202] (-) TimerEvent: {}
+[0.299366] (-) TimerEvent: {}
+[0.399521] (-) TimerEvent: {}
+[0.499667] (-) TimerEvent: {}
+[0.599828] (-) TimerEvent: {}
+[0.627265] (cpe631_ros2) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/dx/ros2_ws/A/build/cpe631_ros2/build', '--no-deps', 'symlink_data'], 'cwd': '/home/dx/ros2_ws/A/build/cpe631_ros2', 'env': {'ENABLE_RVIZ': '1', 'SHLVL': '2', 'HOME': '/home/dx', 'OLDPWD': '/home/dx', 'MODES': 'dynamic', 'CSV_FILE': '/home/dx/ros2_ws/A/dyn_clean.csv', 'RUNS_PER_MODE': '25', 'LOGNAME': 'dx', '_': '/usr/bin/colcon', 'PATH': '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'GZ_GUI': '1', 'LANG': 'zh_CN.UTF-8', 'SHELL': '/bin/sh', 'RESET_PEDS_EACH_RUN': '1', 'PWD': '/home/dx/ros2_ws/A/build/cpe631_ros2', 'SKIP_BUILD': '0', 'COLCON': '1', 'PYTHONPATH': '/home/dx/ros2_ws/A/build/cpe631_ros2/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/dx/ros2_ws/A/install/cpe631_ros2/lib/python3.12/site-packages:'}, 'shell': False}
+[0.699940] (-) TimerEvent: {}
+[0.800637] (-) TimerEvent: {}
+[0.840146] (cpe631_ros2) StdoutLine: {'line': b'running develop\n'}
+[0.900743] (-) TimerEvent: {}
+[0.917209] (cpe631_ros2) StdoutLine: {'line': b'running egg_info\n'}
+[0.923182] (cpe631_ros2) StdoutLine: {'line': b'writing cpe631_ros2.egg-info/PKG-INFO\n'}
+[0.923462] (cpe631_ros2) StdoutLine: {'line': b'writing dependency_links to cpe631_ros2.egg-info/dependency_links.txt\n'}
+[0.923650] (cpe631_ros2) StdoutLine: {'line': b'writing entry points to cpe631_ros2.egg-info/entry_points.txt\n'}
+[0.923813] (cpe631_ros2) StdoutLine: {'line': b'writing requirements to cpe631_ros2.egg-info/requires.txt\n'}
+[0.923989] (cpe631_ros2) StdoutLine: {'line': b'writing top-level names to cpe631_ros2.egg-info/top_level.txt\n'}
+[0.938738] (cpe631_ros2) StdoutLine: {'line': b"reading manifest file 'cpe631_ros2.egg-info/SOURCES.txt'\n"}
+[0.940663] (cpe631_ros2) StdoutLine: {'line': b"writing manifest file 'cpe631_ros2.egg-info/SOURCES.txt'\n"}
+[0.949511] (cpe631_ros2) StdoutLine: {'line': b'running build_ext\n'}
+[0.949702] (cpe631_ros2) StdoutLine: {'line': b'Creating /home/dx/ros2_ws/A/install/cpe631_ros2/lib/python3.12/site-packages/cpe631-ros2.egg-link (link to .)\n'}
+[0.950191] (cpe631_ros2) StdoutLine: {'line': b'Installing cpe631_map_republisher script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.950534] (cpe631_ros2) StdoutLine: {'line': b'Installing cpe631_peds script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.950797] (cpe631_ros2) StdoutLine: {'line': b'Installing cpe631_teleop script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.950958] (cpe631_ros2) StdoutLine: {'line': b'Installing data_collector script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.951109] (cpe631_ros2) StdoutLine: {'line': b'Installing goal_sender script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.951184] (cpe631_ros2) StdoutLine: {'line': b'Installing ped_pose_extractor script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.951366] (cpe631_ros2) StdoutLine: {'line': b'Installing social_nav_node script to /home/dx/ros2_ws/A/install/cpe631_ros2/lib/cpe631_ros2\n'}
+[0.951478] (cpe631_ros2) StdoutLine: {'line': b'\n'}
+[0.951540] (cpe631_ros2) StdoutLine: {'line': b'Installed /home/dx/ros2_ws/A/build/cpe631_ros2\n'}
+[0.951726] (cpe631_ros2) StdoutLine: {'line': b'running symlink_data\n'}
+[0.990838] (cpe631_ros2) CommandEnded: {'returncode': 0}
+[1.000840] (-) TimerEvent: {}
+[1.005711] (cpe631_ros2) JobEnded: {'identifier': 'cpe631_ros2', 'rc': 0}
+[1.006357] (-) EventReactorShutdown: {}
