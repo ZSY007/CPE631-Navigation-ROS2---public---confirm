@@ -193,17 +193,37 @@ wait_lifecycle_active() {
 reset_robot_pose() {
     log "重置机器人位姿 → (${ROBOT_INIT_X}, ${ROBOT_INIT_Y}, yaw=${ROBOT_INIT_YAW})"
 
+    # 先取消可能残留的 Nav2 action。上一轮 abort/timeout 后，BT 或
+    # controller action 有时还会继续推 cmd_vel，导致 Gazebo set_pose 后
+    # 机器人又被旧目标拖走。
+    cancel_nav2_goals
+    stop_robot_motion
+    sleep 1
+
     # AMCL 不 active 时发布 /initialpose 会被忽略，长跑后会导致 Nav2 报
     # "Initial robot pose is not available"。
     wait_lifecycle_active "/amcl" 20 || true
 
-    # 1) Gazebo: 物理位置重置
-    timeout 5 gz service -s /world/cafe_world/set_pose \
+    # 1) Gazebo: 物理位置重置。优先使用 set_pose_vector，和 peds.py 的
+    #    行人复位路径保持一致；固定 GZ_IP 可避免 GUI/VM 环境下偶发
+    #    "Host unreachable" 导致请求没打到 Gazebo。
+    local pose_vector_req
+    pose_vector_req="pose { name: \"${ROBOT_MODEL_NAME}\" position { x: ${ROBOT_INIT_X} y: ${ROBOT_INIT_Y} z: ${ROBOT_INIT_Z} } orientation { x: 0 y: 0 z: 0 w: 1 } }"
+    if ! GZ_IP="${GZ_IP:-127.0.0.1}" timeout 8 gz service -s /world/cafe_world/set_pose_vector \
+        --reqtype gz.msgs.Pose_V \
+        --reptype gz.msgs.Boolean \
+        --timeout 3000 \
+        --req "${pose_vector_req}" \
+        >/tmp/reset_robot_pose_gz.log 2>&1; then
+        warn "Gazebo set_pose_vector 失败，回退到 set_pose (查看 /tmp/reset_robot_pose_gz.log)"
+        GZ_IP="${GZ_IP:-127.0.0.1}" timeout 5 gz service -s /world/cafe_world/set_pose \
         --reqtype gz.msgs.Pose \
         --reptype gz.msgs.Boolean \
         --timeout 3000 \
         --req "name: '${ROBOT_MODEL_NAME}', position: {x: ${ROBOT_INIT_X}, y: ${ROBOT_INIT_Y}, z: ${ROBOT_INIT_Z}}, orientation: {x: 0, y: 0, z: 0, w: 1}" \
-        2>/dev/null || warn "Gazebo set_pose 失败 (非致命)"
+            >/tmp/reset_robot_pose_gz_fallback.log 2>&1 || \
+            warn "Gazebo set_pose 失败 (非致命，查看 /tmp/reset_robot_pose_gz_fallback.log)"
+    fi
 
     # 2) AMCL: 发布 /initialpose 让定位重置
     ros2 topic pub --once /initialpose \
@@ -217,8 +237,31 @@ reset_robot_pose() {
 
     # 4) 等待 Nav2 稳定（costmap 重建 + TF 更新需要时间）
     sleep 5
+    stop_robot_motion
     wait_lifecycle_active "/bt_navigator" 20 || true
     ok "机器人位姿已重置"
+}
+
+cancel_action_goals() {
+    local action_name="$1"
+    local cancel_req
+    cancel_req="{goal_info: {stamp: {sec: 0, nanosec: 0}, goal_id: {uuid: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}}}"
+    timeout 3 ros2 service call "${action_name}/_action/cancel_goal" \
+        action_msgs/srv/CancelGoal "${cancel_req}" >/dev/null 2>&1 || true
+}
+
+cancel_nav2_goals() {
+    log "取消残留 Nav2 action..."
+    cancel_action_goals "/navigate_to_pose"
+    cancel_action_goals "/compute_path_to_pose"
+    cancel_action_goals "/follow_path"
+}
+
+stop_robot_motion() {
+    local zero_twist
+    zero_twist="{header: {frame_id: 'base_link'}, twist: {linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}}"
+    timeout 2 ros2 topic pub --once /cmd_vel geometry_msgs/msg/TwistStamped "${zero_twist}" >/dev/null 2>&1 || true
+    timeout 2 ros2 topic pub --once /cmd_vel_smoothed geometry_msgs/msg/TwistStamped "${zero_twist}" >/dev/null 2>&1 || true
 }
 
 reset_pedestrians() {
@@ -599,6 +642,10 @@ for exp_line in "${EXPERIMENTS[@]}"; do
                 fi
             fi
 
+            # 每个 attempt 都从同一机器人/行人初始状态开始。之前只在
+            # abort 后重置机器人，成功后进入下一轮或刚启动第一轮时不会
+            # 主动校准，容易把上一轮的位置和 Nav2 残留 action 带进新 run。
+            reset_robot_pose
             reset_pedestrians "$enable_peds" || true
 
             # 跑实验
@@ -616,9 +663,9 @@ for exp_line in "${EXPERIMENTS[@]}"; do
                     ;;
                 2)
                     warn "实验 ${mode} #${experiment_id} 被 Nav2 abort (attempt=${attempt})"
+                    reset_robot_pose
                     if [[ $attempt -lt $MAX_RETRY ]]; then
-                        log "重置机器人位姿并重试..."
-                        reset_robot_pose
+                        log "准备重试..."
                         sleep "${RUN_COOLDOWN}"
                     fi
                     ;;
