@@ -77,6 +77,7 @@ class GoalSender(Node):
         self.experiment_wall_timeout = float(
             self.get_parameter("experiment_wall_timeout").value
         )
+
         self.goals = self._load_route(str(self.get_parameter("route").value))
         self._goal_index = 0
         self._goal_handle = None

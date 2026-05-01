@@ -189,6 +189,29 @@ wait_lifecycle_active() {
     return 1
 }
 
+# ── 取消 Nav2 残留 action ────────────────────────────────────
+cancel_action_goals() {
+    local action_name="$1"
+    local cancel_req
+    cancel_req="{goal_info: {stamp: {sec: 0, nanosec: 0}, goal_id: {uuid: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}}}"
+    timeout 3 ros2 service call "${action_name}/_action/cancel_goal" \
+        action_msgs/srv/CancelGoal "${cancel_req}" >/dev/null 2>&1 || true
+}
+
+cancel_nav2_goals() {
+    log "取消残留 Nav2 action..."
+    cancel_action_goals "/navigate_to_pose"
+    cancel_action_goals "/compute_path_to_pose"
+    cancel_action_goals "/follow_path"
+}
+
+stop_robot_motion() {
+    local zero_twist
+    zero_twist="{header: {frame_id: 'base_link'}, twist: {linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}}"
+    timeout 2 ros2 topic pub --once /cmd_vel geometry_msgs/msg/TwistStamped "${zero_twist}" >/dev/null 2>&1 || true
+    timeout 2 ros2 topic pub --once /cmd_vel_smoothed geometry_msgs/msg/TwistStamped "${zero_twist}" >/dev/null 2>&1 || true
+}
+
 # ── 复位机器人位姿 ────────────────────────────────────────────
 reset_robot_pose() {
     log "重置机器人位姿 → (${ROBOT_INIT_X}, ${ROBOT_INIT_Y}, yaw=${ROBOT_INIT_YAW})"
@@ -217,10 +240,10 @@ reset_robot_pose() {
         >/tmp/reset_robot_pose_gz.log 2>&1; then
         warn "Gazebo set_pose_vector 失败，回退到 set_pose (查看 /tmp/reset_robot_pose_gz.log)"
         GZ_IP="${GZ_IP:-127.0.0.1}" timeout 5 gz service -s /world/cafe_world/set_pose \
-        --reqtype gz.msgs.Pose \
-        --reptype gz.msgs.Boolean \
-        --timeout 3000 \
-        --req "name: '${ROBOT_MODEL_NAME}', position: {x: ${ROBOT_INIT_X}, y: ${ROBOT_INIT_Y}, z: ${ROBOT_INIT_Z}}, orientation: {x: 0, y: 0, z: 0, w: 1}" \
+            --reqtype gz.msgs.Pose \
+            --reptype gz.msgs.Boolean \
+            --timeout 3000 \
+            --req "name: '${ROBOT_MODEL_NAME}', position: {x: ${ROBOT_INIT_X}, y: ${ROBOT_INIT_Y}, z: ${ROBOT_INIT_Z}}, orientation: {x: 0, y: 0, z: 0, w: 1}" \
             >/tmp/reset_robot_pose_gz_fallback.log 2>&1 || \
             warn "Gazebo set_pose 失败 (非致命，查看 /tmp/reset_robot_pose_gz_fallback.log)"
     fi

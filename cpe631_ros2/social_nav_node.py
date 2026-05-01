@@ -251,23 +251,27 @@ class PedestrianTracker:
                     offset = ped_react_gain / (dist_to_robot + 0.1) * avoidance_dir
                     mean = mean + offset
 
-            # ── Heading 惯性约束：每步最多转 max_heading_change，与上一步比较 ──
-            if speed >= min_motion_speed and k > 1:
+            # ── Heading 惯性约束：每步从 prev_heading 向目标 heading 最多转 max_heading_change ──
+            if speed >= min_motion_speed:
                 cross = (prev_heading[0] * heading[1]
                          - prev_heading[1] * heading[0])
-                dot = (prev_heading[0] * heading[0]
-                       + prev_heading[1] * heading[1])
+                dot = float(np.clip(
+                    prev_heading[0] * heading[0] + prev_heading[1] * heading[1],
+                    -1.0, 1.0,
+                ))
                 angle_diff = math.atan2(cross, dot)
                 if abs(angle_diff) > max_heading_change:
-                    clamped = max_heading_change * (1.0 if angle_diff > 0 else -1.0)
-                    cos_a = math.cos(clamped)
-                    sin_a = math.sin(clamped)
+                    step = max_heading_change * (1.0 if angle_diff > 0 else -1.0)
+                    cos_a = math.cos(step)
+                    sin_a = math.sin(step)
                     current_heading = np.array([
                         prev_heading[0] * cos_a - prev_heading[1] * sin_a,
                         prev_heading[0] * sin_a + prev_heading[1] * cos_a,
                     ])
                 else:
                     current_heading = heading.copy()
+            else:
+                current_heading = heading.copy()
             prev_heading = current_heading.copy()
 
             # ── 非线性不确定性增长 ──
