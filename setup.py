@@ -47,6 +47,7 @@ setup(
             'social_nav_node = cpe631_ros2.social_nav_node:main',
             'data_collector = cpe631_ros2.data_collector:main',
             'goal_sender = cpe631_ros2.goal_sender:main',
+            'replan_trigger = cpe631_ros2.replan_trigger:main',
         ],
     },
 )

@@ -55,10 +55,13 @@ def _select_nav2_params(
     social_astar_params: str,
     social_dstar_params: str,
     social_smac_params: str,
+    dstar_plus_params: str,
 ):
     social_navigation = LaunchConfiguration('social_navigation').perform(context).lower()
     planner_variant = LaunchConfiguration('planner_variant').perform(context).lower()
-    if social_navigation in ('1', 'true', 'yes', 'on'):
+    if planner_variant == 'dstarplus':
+        params_file = dstar_plus_params
+    elif social_navigation in ('1', 'true', 'yes', 'on'):
         if planner_variant == 'astar':
             params_file = social_astar_params
         elif planner_variant == 'dstar':
@@ -90,6 +93,7 @@ def generate_launch_description():
     nav2_social_astar_params = os.path.join(pkg_share, 'param', 'nav2_social_astar.yaml')
     nav2_social_dstar_params = os.path.join(pkg_share, 'param', 'nav2_social_dstar.yaml')
     nav2_social_smac_params = os.path.join(pkg_share, 'param', 'nav2_social_smac.yaml')
+    nav2_dstar_plus_params = os.path.join(pkg_share, 'param', 'nav2_dstar_plus.yaml')
     social_pose_bridge = os.path.join(pkg_share, 'param', 'social_pose_bridge.yaml')
     default_map = os.path.join(pkg_share, 'maps', 'cafe.yaml')
     # Reuse the known-good RViz layout / tools from the standard navigation launch.
@@ -137,6 +141,7 @@ def generate_launch_description():
             nav2_social_astar_params,
             nav2_social_dstar_params,
             nav2_social_smac_params,
+            nav2_dstar_plus_params,
         ],
     )
     social_condition = IfCondition(PythonExpression([
@@ -448,6 +453,20 @@ def generate_launch_description():
         ],
     )
 
+    dstar_plus_condition = IfCondition(PythonExpression([
+        "'", navigation, "'.lower() == 'true' and '",
+        LaunchConfiguration('planner_variant'), "'.lower() == 'dstarplus'",
+    ]))
+
+    replan_trigger_node = Node(
+        package='cpe631_ros2',
+        executable='replan_trigger',
+        name='replan_trigger',
+        output='screen',
+        condition=dstar_plus_condition,
+        parameters=[{'use_sim_time': use_sim_time}],
+    )
+
     map_republisher = Node(
         package='cpe631_ros2',
         executable='cpe631_map_republisher',
@@ -520,6 +539,7 @@ def generate_launch_description():
         ped_pose_extractor,
         peds_manager,
         social_nav_node,
+        replan_trigger_node,
         map_republisher,
         rviz,
     ])
