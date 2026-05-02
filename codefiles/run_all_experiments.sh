@@ -254,7 +254,7 @@ reset_robot_pose() {
     ros2 topic pub --once /initialpose \
         geometry_msgs/msg/PoseWithCovarianceStamped \
         "{header: {frame_id: 'map'}, pose: {pose: {position: {x: ${ROBOT_INIT_X}, y: ${ROBOT_INIT_Y}, z: 0.0}, orientation: {z: 0.0, w: 1.0}}}}" \
-        --ros-args -p use_sim_time:=true \
+        --use-sim-time \
         2>/dev/null || warn "initialpose 发布失败 (非致命)"
 
     # 3) 清除 Nav2 costmap (避免残留障碍物)
