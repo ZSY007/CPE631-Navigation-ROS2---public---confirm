@@ -155,15 +155,15 @@ cleanup_full() {
 
     LAUNCH_PID=""
 
-    # 3) 重启 ros2 daemon
+    # 3) 清理 DDS 共享内存
+    rm -f /dev/shm/fastrtps_* /dev/shm/cyclonedds_* 2>/dev/null || true
+    rm -f /tmp/cyclonedds_* 2>/dev/null || true
+
+    # 4) 重启 ros2 daemon
     timeout 5 ros2 daemon stop 2>/dev/null || true
     sleep 1
     timeout 5 ros2 daemon start 2>/dev/null || true
     sleep 1
-
-    # 4) 清理 DDS 共享内存
-    rm -f /dev/shm/fastrtps_* /dev/shm/cyclonedds_* 2>/dev/null || true
-    rm -f /tmp/cyclonedds_* 2>/dev/null || true
 
     log "清理完成"
 }
