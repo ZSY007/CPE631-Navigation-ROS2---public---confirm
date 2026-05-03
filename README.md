@@ -42,7 +42,7 @@ environment (such as map availability, etc.).
 This project includes the following pieces:
 
 - a social costmap node that reacts to pedestrians and their predicted motion;
-- a Nav2 D* Lite global planner plugin for incremental replanning;
+- a Nav2 D* Lite global planner plugin (note: not a true cross-call incremental repair);
 - dynamic navigation configurations using MPPI and conservative costmap settings;
 - experiment scripts and CSV logging for result collection.
 

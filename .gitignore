@@ -1,3 +1,30 @@
+# Ignore local and build artifacts
+.claude/
+copilot_history/
+build/
+install/
+logs/
+log/
+.roslog*
+*.roslog
+*.roslog_py
+*.roslog_run
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Packaging
+dist/
+*.egg-info/
+
+# OS
+.DS_Store
+
+# Backups
+*.bak
 # Keep runtime/build logs local only
 log/
 logs/
